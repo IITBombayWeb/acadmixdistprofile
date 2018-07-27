@@ -36,6 +36,11 @@ function iitbacademic_install() {
   // Enable the admin theme.
   //\Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
 
+  \Drupal::configFactory()
+    ->getEditable('system.theme')
+    ->set('default', 'acadmix')
+    ->save();
+
   // Creating users with this role.
   //$user_add = User::create();
   //$user_add->setUsername('Tom');
