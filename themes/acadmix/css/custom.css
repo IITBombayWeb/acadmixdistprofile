@@ -96,9 +96,6 @@ a.logo{
   background-color: transparent!important;
 }
 
-
-
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 .card {
   display: block;
@@ -175,20 +172,6 @@ li.dropdown-submenu a span.glyphicon{
   display: block;
 }
 
-/* .dropdown-submenu > a:after {
-content:"\e250";
-display: inline-block;
-font-family: 'Glyphicons Halflings';
-font-style: normal;
-font-size: 10px;
-margin-top: 5px;
-}
-
-.navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > a:after {
-  float: right;
-  content:"\e250";
-  }
-   */
 .dropdown-submenu:hover > a:after {
   border-left-color: #fff;
 }
@@ -225,6 +208,76 @@ left: 100%;
   white-space: normal;
 }
 /*main navigation dropdown end*/
+
+
+/* main slider section */
+
+#slick-views-main-slider-block-1-1-slider .slide__content img{
+  height: 25em;
+}
+
+.slick-arrow{
+  position: absolute;
+  height: 50px;
+  color: transparent;
+  width: 50px;
+}
+
+.slick__arrow{
+  left: 8px;
+}
+
+.slick-prev::before{
+content: "\f104";
+font-family: FontAwesome;
+padding: 0 5px;
+color: #ffffff;
+position: absolute;
+font-size: 45px;
+top: 0%;
+left: 20%;
+}
+.slick-next::before{
+  content: "\f105";
+  font-family: FontAwesome;
+  padding: 0 5px;
+  color: #ffffff;
+  position: absolute;
+  font-size: 45px;
+  top: 0%;
+  right: 20%;
+  
+}
+
+@media screen and (min-width: 767px)
+{
+  .region-research-highlights #slick-views-research-highlights-block-1-1{
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .region-slider .slick-arrow {
+    border-radius: 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .region-slider .slick-arrow:hover{
+    background-color: #e3e3ed;
+    -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+     -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+
+
+
+
+
+
+
+/* main slider section ends */
 
 
 /* footer section */

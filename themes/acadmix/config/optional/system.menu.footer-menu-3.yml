@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: footer-menu-3
+label: 'Footer Menu 3'
+description: 'Footer column 3 menu'
+locked: false

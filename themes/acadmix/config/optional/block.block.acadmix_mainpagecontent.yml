@@ -5,7 +5,7 @@ dependencies:
     - system
   theme:
     - acadmix
-id: acadmix_content
+id: acadmix_mainpagecontent
 theme: acadmix
 region: content
 weight: 0
