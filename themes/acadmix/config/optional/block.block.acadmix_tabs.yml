@@ -3,6 +3,9 @@ status: true
 dependencies:
   theme:
     - acadmix
+  enforced:
+    theme:
+      - acadmix
 id: acadmix_tabs
 theme: acadmix
 region: content_top

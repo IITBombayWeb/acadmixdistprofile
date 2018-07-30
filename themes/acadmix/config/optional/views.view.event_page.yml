@@ -10,6 +10,9 @@ dependencies:
     - node
     - text
     - user
+  enforced:
+    theme:
+      - acadmix
 id: event_page
 label: 'Event Page'
 module: views

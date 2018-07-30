@@ -5,6 +5,9 @@ dependencies:
     - search
   theme:
     - acadmix
+  enforced:
+    theme:
+      - acadmix
 id: acadmix_searchform
 theme: acadmix
 region: header_search

@@ -9,6 +9,9 @@ dependencies:
     - node
     - slick_views
     - user
+  enforced:
+    theme:
+      - acadmix
 id: main_slider
 label: 'Main Slider'
 module: views

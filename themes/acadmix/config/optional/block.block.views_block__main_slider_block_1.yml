@@ -7,6 +7,9 @@ dependencies:
     - views
   theme:
     - acadmix
+  enforced:
+    theme:
+      - acadmix
 id: views_block__main_slider_block_1
 theme: acadmix
 region: slider

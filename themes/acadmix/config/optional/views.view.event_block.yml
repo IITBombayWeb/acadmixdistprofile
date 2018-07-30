@@ -8,6 +8,9 @@ dependencies:
     - datetime
     - node
     - user
+  enforced:
+    theme:
+      - acadmix
 id: event_block
 label: 'Event Block'
 module: views

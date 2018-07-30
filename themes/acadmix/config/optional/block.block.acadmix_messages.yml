@@ -5,6 +5,9 @@ dependencies:
     - system
   theme:
     - acadmix
+  enforced:
+    theme:
+      - acadmix
 id: acadmix_messages
 theme: acadmix
 region: highlighted

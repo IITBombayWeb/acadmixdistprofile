@@ -7,6 +7,9 @@ dependencies:
     - system
   theme:
     - acadmix
+  enforced:
+    theme:
+      - acadmix
 id: acadmix_main_navigation
 theme: acadmix
 region: navigation_collapsible

@@ -1,6 +1,9 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  enforced:
+    theme:
+      - acadmix
 id: footer-menu-2
 label: 'Footer Menu 2'
 description: 'Footer column 2 menu'

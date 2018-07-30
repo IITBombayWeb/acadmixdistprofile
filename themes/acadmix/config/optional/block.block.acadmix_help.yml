@@ -5,6 +5,9 @@ dependencies:
     - help
   theme:
     - acadmix
+  enforced:
+    theme:
+      - acadmix
 id: acadmix_help
 theme: acadmix
 region: help

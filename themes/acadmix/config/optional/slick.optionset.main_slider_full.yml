@@ -4,6 +4,8 @@ dependencies:
   enforced:
     module:
       - slick
+    theme:
+      - acadmix
 id: main_slider_full
 name: main_slider_full
 label: 'main slider full'
