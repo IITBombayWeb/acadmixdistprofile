@@ -7,10 +7,13 @@ dependencies:
     - system
   theme:
     - acadmix
-id: useraccountmenu
+  enforced:
+    theme:
+      - acadmix
+id: acadmix_useraccountmenu
 theme: acadmix
-region: navigation_collapsible
-weight: -11
+region: footer_bar_right
+weight: 0
 provider: null
 plugin: 'system_menu_block:account'
 settings:

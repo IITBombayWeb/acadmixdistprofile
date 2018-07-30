@@ -21,7 +21,7 @@ favicon:
   use_default: 1
 schemas:
   bootstrap: 8000
-  academix: 8000
+  acadmix: 8000
 features:
   comment_user_picture: 1
   comment_user_verification: 1
@@ -32,22 +32,28 @@ logo:
   url: ''
   use_default: 1
 region_wells:
-  navigation: ''
-  navigation_collapsible: ''
   header: ''
+  header_search: ''
+  navigation_collapsible: ''
+  slider: ''
   highlighted: ''
   help: ''
-  box_region: ''
+  top_head: ''
+  top1: ''
+  top2: ''
+  top3: ''
+  top4: ''
+  content_top: ''
   content: ''
   sidebar_first: ''
   sidebar_second: ''
-  footer_first: ''
-  footer_second: ''
-  footer_third: ''
-  footer_fourth: ''
+  footer1: ''
+  footer2: ''
+  footer3: ''
+  footer4: ''
   footer_bar_left: ''
   footer_bar_right: ''
-fluid_container: 1
+fluid_container: 0
 table_bordered: 1
 table_responsive: '-1'
 cdn_provider_import_data: ''

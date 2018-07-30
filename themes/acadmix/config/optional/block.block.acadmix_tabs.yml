@@ -1,22 +1,22 @@
 langcode: en
 status: true
 dependencies:
-  module:
-    - help
   theme:
     - acadmix
   enforced:
     theme:
       - acadmix
-id: acadmix_help
+id: acadmix_tabs
 theme: acadmix
-region: help
-weight: 0
+region: content_top
+weight: -5
 provider: null
-plugin: help_block
+plugin: local_tasks_block
 settings:
-  id: help_block
-  label: Help
-  provider: help
+  id: local_tasks_block
+  label: Tabs
+  provider: core
   label_display: '0'
+  primary: true
+  secondary: true
 visibility: {  }

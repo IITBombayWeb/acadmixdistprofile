@@ -5,6 +5,9 @@ dependencies:
     - system
   theme:
     - acadmix
+  enforced:
+    theme:
+      - acadmix
 id: acadmix_messages
 theme: acadmix
 region: highlighted
@@ -13,7 +16,7 @@ provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: Messages
   provider: system
   label_display: '0'
 visibility: {  }

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    theme:
+      - acadmix
+id: footer-menu-3
+label: 'Footer Menu 3'
+description: 'Footer column 3 menu'
+locked: false

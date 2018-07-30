@@ -3,17 +3,18 @@ status: true
 dependencies:
   theme:
     - acadmix
-id: acadmix_local_tasks
+  enforced:
+    theme:
+      - acadmix
+id: acadmix_primary_admin_actions
 theme: acadmix
 region: content_top
-weight: -9
+weight: -5
 provider: null
-plugin: local_tasks_block
+plugin: local_actions_block
 settings:
-  id: local_tasks_block
-  label: Tabs
+  id: local_actions_block
+  label: 'Primary admin actions'
   provider: core
   label_display: '0'
-  primary: true
-  secondary: true
 visibility: {  }
