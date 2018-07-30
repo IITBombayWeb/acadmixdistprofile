@@ -8,7 +8,7 @@ dependencies:
 id: acadmix_help
 theme: acadmix
 region: help
-weight: -6
+weight: 0
 provider: null
 plugin: help_block
 settings:

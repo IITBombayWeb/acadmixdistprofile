@@ -7,10 +7,10 @@ dependencies:
     - system
   theme:
     - acadmix
-id: acadmix_main_menu
+id: acadmix_main_navigation
 theme: acadmix
 region: navigation_collapsible
-weight: -9
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:

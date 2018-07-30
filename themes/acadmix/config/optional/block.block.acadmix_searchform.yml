@@ -5,15 +5,15 @@ dependencies:
     - search
   theme:
     - acadmix
-id: acadmix_search
+id: acadmix_searchform
 theme: acadmix
-region: navigation_collapsible
-weight: -10
+region: header_search
+weight: -2
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: Search
+  label: 'Search form'
   provider: search
-  label_display: visible
+  label_display: '0'
 visibility: {  }

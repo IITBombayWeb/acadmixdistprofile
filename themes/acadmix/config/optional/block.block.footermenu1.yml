@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu-1
+  module:
+    - system
+  theme:
+    - acadmix
+id: footermenu1
+theme: acadmix
+region: footer2
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-menu-1'
+settings:
+  id: 'system_menu_block:footer-menu-1'
+  label: 'Footer Menu 1'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

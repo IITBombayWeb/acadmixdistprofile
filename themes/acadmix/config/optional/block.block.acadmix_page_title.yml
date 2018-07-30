@@ -1,3 +1,4 @@
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +8,7 @@ dependencies:
 id: acadmix_page_title
 theme: acadmix
 region: content_top
-weight: -8
+weight: -6
 provider: null
 plugin: page_title_block
 settings:
@@ -15,6 +16,7 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
+visibility:
 visibility:
   request_path:
     id: request_path
