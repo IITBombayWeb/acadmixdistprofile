@@ -88,6 +88,30 @@ a.logo{
 
 /* header-end */
 
+
+
+/*login-form-start*/
+
+.user-login-form,
+.user-form,
+.user-pass{
+  max-width: 650px;
+  margin: 40px auto;
+  border: 1px solid #ddd;
+  padding: 10px 30px;
+  background: #FBFBFB;
+}
+
+.user-login-form .form-text,
+.user-login-form .form-email,
+.user-form .form-text,
+.user-form .form-email,
+.user-pass .form-text{
+  width: 100%;
+}
+/* login form end */
+
+
 .region-footer-bar-left ul.menu li{
   display: inline-block;
 }

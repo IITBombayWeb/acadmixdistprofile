@@ -1,0 +1,196 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+	<header class="sabbi-page-header page-header-lg ">
+        <div class="page-header-content conternt-center">
+            <div class="header-title-block">
+          </div>
+        </div>
+  </header>
+<{{ ds_content_wrapper }}{{ attributes.addClass('ds-1col', 'clearfix') }}>
+
+  {{ title_suffix.contextual_links }}
+
+  {{ ds_content }}
+
+
+  <div class="container page-academix site-padding-single">
+	<div class="row">
+		<div class="col-sm-4 col-md-4 pull-up-240">
+         {{ ds_content.field_faculty_photo }}
+        	
+    		<img src="" class="img-responsive img-bit-round" alt="">           
+     		<div class="sp-blank-20"></div>
+	    	<div class="addr_future_memb">
+            	<h4 class="entry-title">Location</h4>
+                <div class="address-entry">
+                	<p class="__adtext">{{ ds_content.field_faculty_room_no }}, {{ ds_content.field_faculty_building }}</p>
+                </div>
+            	<footer class="contact-info">
+                	<h4 class="entry-title">Contact Information</h4>
+                    <p class="__ci_num"><strong>Call:</strong> <span>{{ ds_content.field_faculty_phone_no }}</span></p>
+                    <p class="__ci_num"><strong>Email:</strong> <span>{{ ds_content.field_faculty_email }}</span></p>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-sm-8">
+        	<article class="profile-glimps">
+                <h2 class="entry-title title-foc-md">{{ ds_content.field_faculty_full_name }}Dr. Rushmore</h2>
+                 <p class="text-foc-md"></p>
+                 <p class="text-foc-md">{{ ds_content.field_faculty_category }}</p>
+                 <p class="text-foc-md">{{ ds_content.field_faculty_designation }}</p>
+                <div class="stage-content-biog">
+                	<h3 class="stage-title">Biography</h3>
+					<p>Lorem ipsum dolor sit amet, con adipiscing elit. Etiam convallis elit id impedie. Quisq commodo ornare tortor Quiue bibendu m. magna vitae ex interdum cursus. Nullam lacinia pretium nibh, vitae imperdiet lacus tempor sit amet. Donec ultrices est nec tellus finibus facilisis. Nullam sodales justo id magna fringilla rutrum. Duis bibendum id eros congue bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis elit id odio imperdiet feugiat. Quisque commodo ornare tortor. Quisque bibendum magna vitae ex interdum cursus. Nullam lacinia pretium nibh, vitae imperdiet lacus tempor sit amet. Donec ultrices est nec tellus finibus facilisis. Nullam sodales justo id magna fringilla rutrum. Duis bibendum id eros congue bibendum</p>
+                </div><!-- /.stage-content-biog -->
+            </article>
+            
+            <section class="gimps-container">
+            	<h4 class="gimps-title">Background</h4>
+                <div class="row">
+                	<div class="col-md-8 col-md-offset-1 col-sm-10">
+                        <ol class="ol-timeline">
+                            <li class="tl-item with-icon">
+                                <p><span class="item-section">March 2012</span></p>
+                               	<div class="content-wrapper">
+                                    <h3 class="title">California Conference</h3>
+                                    <div class="description">California National University, California, USA</div>
+                                </div>
+                            </li>
+                            <li class="tl-item with-icon">
+                                <p><span class="item-section">March 2007</span></p>
+                                <div class="content-wrapper">
+                                    <h3 class="title">PHD</h3>
+                                    <div class="description">Kusan National University, Busan, South Korea</div>
+                                </div>
+                            </li>
+                            <li class="tl-item with-icon">
+                                <p><span class="item-section">September 1999</span></p>
+                                <div class="content-wrapper">
+                                    <h3 class="title">MSc</h3>
+                                    <div class="description">University of California, Davis, USA</div>
+                                </div>
+                            </li>
+                            <li class="tl-item with-icon">
+                            	<p><span class="item-section">Augest 1998</span></p>
+                            	<div class="content-wrapper">
+                                	<h3 class="title">BSc (Hons)</h3>
+                                    <div class="description">University of California, Davis, USA</div>
+                                </div>
+                            </li>
+                        </ol>
+                	</div>
+                </div>
+            </section><!-- /.gimps-container -->
+                                                
+            <section class="gimps-container appoint-timeline-holder">
+                <h4 class="gimps-title">Professional Appointments</h4>
+                <div class="row">
+                    <div class="col-sm-9">
+                        <ol class="appoint-timeline  list-unstyled">
+                            <li>
+                              	<span class="year">2008-2009</span>
+                                <div class="appoint-meta">
+                                    <h5 class="pex-title">Senior Lecturer</h5>
+                                    <div class="meta-span">Pusan National University, Busan, South Korea</div>
+                                </div>
+                            </li>
+                            <li>
+                               	<span class="year">2009-2011 NHMRC CDF</span>
+                                <div class="appoint-meta">
+                                    <h5 class="pex-title">NHMRC CDF</h5>
+                                    <div class="meta-span">Friffith University Australian</div>
+                                </div>
+                            </li>
+                			<li>
+                            	<span class="year">2012-2014</span>
+                                <div class="appoint-meta">
+                                    <h5 class="pex-title">Senior Lecturer</h5>
+                                    <div class="meta-span">Pusan National University, Busan, South Korea</div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="year">2014-2017</span>
+                                <div class="appoint-meta">
+                                	<h5 class="pex-title">Postdoctoral Research Fellow</h5>
+                                    <div class="meta-span">School of Chemistry, Monash University</div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+			</section><!-- /.gimps-container .appoint-timeline-holder -->
+        
+    		<section class="gimps-container">
+                <h4 class="gimps-title">Awards &amp; Prizes</h4>
+                <div class="row">
+                    <div class="col-sm-11">
+                        <ul class="awards-list list-unstyled">
+                            <li>
+                                <span class="year">2015</span>
+                                <div class="awards-meta">
+                                    <h5 class="awards-title">{{ ds_content.field_faculty_awards_and_fellows }}</h5>
+                                    <div class="awards-meta">
+                                    	<span>Australian National Health and Medical Research Council</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="year">2015</span>
+                                    <div class="awards-meta">
+                                        <h5 class="awards-title">Awards for Excellence in RHD Supervision</h5>
+                                        	<div class="awards-meta">
+                                        		<span>The University of Queensland (Nominated &amp; Finalist)
+                                        		</span>
+                                        	</div>
+                                    </div>
+                            </li>
+                            <li>
+                                <span class="year">2014</span>
+                                    <div class="awards-meta">
+                                        <h5 class="awards-title">AIBN Ambassador</h5>
+                                        <div class="awards-meta"><span>The University of Queensland</span></div>
+                                    </div>
+                            </li>
+                            <li>
+                                <span class="year">2012</span>
+                                    <div class="awards-meta">
+                                        <h5 class="awards-title">ARC DECRA</h5>
+                                        <div class="awards-meta"><span>Australian Research Council</span></div>
+                                    </div>
+                            </li>
+                            <li>
+                                <span class="year">2011</span>
+                                    <div class="awards-meta">
+                                        <h5 class="awards-title">Early Career Researcher Award</h5>
+                                        <div class="awards-meta"><span>The University of Queensland</span></div>
+                                    </div>
+                            </li>
+                            <li>
+                                <span class="year">2007</span>
+                                    <div class="awards-meta">
+                                        <h5 class="awards-title">Graduate Student Award</h5>
+                                        <div class="awards-meta"><span>Pusan National University</span></div>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!-- /.gimps-container -->
+        </div><!-- #main -->
+    </div>
+</div>
+
+
+</{{ ds_content_wrapper }}>
+
+
