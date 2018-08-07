@@ -247,9 +247,6 @@ left: 100%;
   width: 50px;
 }
 
-.slick__arrow{
-  left: 8px;
-}
 
 .slick-prev::before{
 content: "\f104";
