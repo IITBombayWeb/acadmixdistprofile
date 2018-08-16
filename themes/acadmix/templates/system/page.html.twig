@@ -103,21 +103,19 @@
    {% endblock %} {#end block navbar #}
 {% endif %} {# end if page.header or..... #}
 
+{% if page.slider %}  
+  {{ page.slider }}
+{% endif %}
+
 {# Main #}
 {% block main %}
   <div role="main" class="{{ main_container_class}} {{ container }} js-quickedit-main-content">
 
 
       
-          {% if page.top1 or page.top2 or page.top3 or page.top4 or page.top_head or page.slider %}
+          {% if page.top1 or page.top2 or page.top3 or page.top4 or page.top_head %}
                   
-                  {% if page.slider %}
-                    <div class="row">
-                      <div class="col-md-12">
-                        {{ page.slider }}
-                      </div>
-                    </div>
-                  {% endif %}
+
 
                   {% if page.top_head or page.highlighted %}
                     <div class="row clearfix">
