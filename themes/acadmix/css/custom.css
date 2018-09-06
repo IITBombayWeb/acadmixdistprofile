@@ -236,14 +236,22 @@ left: 100%;
 
 /* main slider section */
 
-.region-slider{
-  margin-top: 5em;
+.slider-wrapper{
+  margin-top: 9em;
 }
+.slider-wrapper-admin{
+  margin-top: 4.5em;
+}
+
 @media screen and (max-width: 768px){
-  .region-slider{
+  .slider-wrapper{
+    margin-top: 8em;
+  }
+  .slider-wrapper-admin{
     margin-top: 4em;
   }
 }
+
 #slick-views-main-slider-block-1-1-slider .slide__content img{
   height: 25em;
 }
