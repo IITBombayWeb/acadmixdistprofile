@@ -35,8 +35,9 @@ body {
   font-weight: 400;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
@@ -756,12 +757,6 @@ body .mb-100 {
 .menu-padding {
     padding: 10px 0;
 }
-@media (max-width: 450px) {
-  .navbar-brand {
-    max-width: 260px;
-    padding: 0 20px;
-  }
-}
 
 .navbar-toggle {
   background: #d2cfcf;
@@ -806,9 +801,6 @@ h1.academix-logo {
     min-height: 72px;
     padding: 10px 0;
   }
-  .navbar-brand {
-    max-width: 260px;
-  }
   .navbar-kawsa .nav-btn-wrap {
     display: none; } }
 
@@ -838,12 +830,12 @@ h1.academix-logo {
   }
   .navbar-nav-hov_underline .navbar-nav li ul.dropdown-menu li a:hover, .navbar-nav-hov_underline .navbar-nav li ul.dropdown-menu li a:focus{
     background: transparent;
-    border-bottom: 4px solid #D30015; 
+    border-bottom: 4px solid #D30015;
   }
 }
   .navbar-nav-hov_underline .navbar-nav li a:hover, .navbar-nav-hov_underline .navbar-nav li a:focus {
     background: transparent;
-    border-bottom: 4px solid #D30015; 
+    border-bottom: 4px solid #D30015;
   }
 
 .navbar-nav-hov_underline .navbar-nav .dropdown-menu {
@@ -859,23 +851,23 @@ h1.academix-logo {
     top: -5px;
     width: 100%;
     height: 5px;
-    background-color: #D30015; 
+    background-color: #D30015;
   }
   @media (max-width: 767px)
    {
     .navbar-nav-hov_underline .navbar-nav .dropdown-menu:before {
       display: none;
-    } 
+    }
   }
   .navbar-nav-hov_underline .navbar-nav .dropdown-menu li a {
     padding: 10px 15px;
-    border-bottom: 1px solid #eef0f1; 
+    border-bottom: 1px solid #eef0f1;
   }
     .navbar-nav-hov_underline .navbar-nav .dropdown-menu li a:hover {
-      color: #D30015; 
+      color: #D30015;
     }
   .navbar-nav-hov_underline .navbar-nav .dropdown-menu li.active a {
-    color: #D30015; 
+    color: #D30015;
   }
 
 @media (max-width: 767px) {
@@ -920,10 +912,18 @@ h1.academix-logo {
 /* header */
 .sabbi-page-header {
   min-height: 230px;
-  background-color: rgba(163, 22, 117, 0.12);
-  position: relative; }
+  /* background-color: rgba(163, 22, 117, 0.12); */
+  background-color: rgba(156, 121, 145, 0.12);
+  position: relative;
+}
   .sabbi-page-header.page-header-lg {
-    min-height: 265px; }
+    min-height: 265px;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%;
+  }
   .sabbi-page-header .header-title-block {
     position: absolute;
     bottom: 0;
@@ -1925,8 +1925,8 @@ ul.list-unstyled.lst_news_list {
 .appoint-timeline-holder {
   margin-top: 75px; }
 
-.sabbi-page-header {
-  margin-top: 75px; }
+/* .sabbi-page-header {
+  margin-top: 75px; } */
 
 .page-academix .sabbi-page-header {
   background-color: #b03838; }
@@ -2158,7 +2158,7 @@ ul.page-numbers {
     margin: 15px 0 10px;
     font-size: 1rem;
    }
-  
+
    .section-footer .widget_text .textwidget p{
     margin-bottom: 5px;
   }
