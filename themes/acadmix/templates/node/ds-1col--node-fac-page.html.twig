@@ -19,41 +19,38 @@
 
   {{ title_suffix.contextual_links }}
 
-  {{ ds_content }}
-
-
   <div class="container page-academix site-padding-single">
 	<div class="row">
 		<div class="col-sm-4 col-md-4 pull-up-240">
          {{ ds_content.field_faculty_photo }}
-        	
-    		<img src="" class="img-responsive img-bit-round" alt="">           
+
+    		<img src="" class="img-responsive img-bit-round" alt="">
      		<div class="sp-blank-20"></div>
 	    	<div class="addr_future_memb">
             	<h4 class="entry-title">Location</h4>
                 <div class="address-entry">
-                	<p class="__adtext">{{ ds_content.field_faculty_room_no }}, {{ ds_content.field_faculty_building }}</p>
+                	<p class="__adtext">{{ ds_content.field_faculty_room_no.0 }}, {{ ds_content.field_faculty_building.0 }}</p>
                 </div>
             	<footer class="contact-info">
                 	<h4 class="entry-title">Contact Information</h4>
-                    <p class="__ci_num"><strong>Call:</strong> <span>{{ ds_content.field_faculty_phone_no }}</span></p>
-                    <p class="__ci_num"><strong>Email:</strong> <span>{{ ds_content.field_faculty_email }}</span></p>
+                    <p class="__ci_num"><strong>Call:</strong> <span>{{ ds_content.field_faculty_phone_no.0 }}</span></p>
+                    <p class="__ci_num"><strong>Email:</strong> <span>{{ ds_content.field_faculty_email.0 }}</span></p>
                 </footer>
-            </div>
+        </div>
         </div>
 
         <div class="col-sm-8">
         	<article class="profile-glimps">
-                <h2 class="entry-title title-foc-md">{{ ds_content.field_faculty_full_name }}Dr. Rushmore</h2>
+                <h2 class="entry-title title-foc-md">{{ ds_content.field_faculty_full_name }}</h2>
                  <p class="text-foc-md"></p>
-                 <p class="text-foc-md">{{ ds_content.field_faculty_category }}</p>
-                 <p class="text-foc-md">{{ ds_content.field_faculty_designation }}</p>
+                 <p class="text-foc-md">{{ ds_content.field_faculty_category.0 }}</p>
+                 <p class="text-foc-md">{{ ds_content.field_faculty_designation.0 }}</p>
                 <div class="stage-content-biog">
                 	<h3 class="stage-title">Biography</h3>
 					<p>Lorem ipsum dolor sit amet, con adipiscing elit. Etiam convallis elit id impedie. Quisq commodo ornare tortor Quiue bibendu m. magna vitae ex interdum cursus. Nullam lacinia pretium nibh, vitae imperdiet lacus tempor sit amet. Donec ultrices est nec tellus finibus facilisis. Nullam sodales justo id magna fringilla rutrum. Duis bibendum id eros congue bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis elit id odio imperdiet feugiat. Quisque commodo ornare tortor. Quisque bibendum magna vitae ex interdum cursus. Nullam lacinia pretium nibh, vitae imperdiet lacus tempor sit amet. Donec ultrices est nec tellus finibus facilisis. Nullam sodales justo id magna fringilla rutrum. Duis bibendum id eros congue bibendum</p>
                 </div><!-- /.stage-content-biog -->
             </article>
-            
+
             <section class="gimps-container">
             	<h4 class="gimps-title">Background</h4>
                 <div class="row">
@@ -91,12 +88,14 @@
                 	</div>
                 </div>
             </section><!-- /.gimps-container -->
-                                                
+
             <section class="gimps-container appoint-timeline-holder">
-                <h4 class="gimps-title">Professional Appointments</h4>
+                <!-- <h4 class="gimps-title">Professional Appointments</h4> -->
                 <div class="row">
                     <div class="col-sm-9">
-                        <ol class="appoint-timeline  list-unstyled">
+											{{ ds_content.field_faculty_affiliations_new }}
+
+                        <!-- <ol class="appoint-timeline list-unstyled">
                             <li>
                               	<span class="year">2008-2009</span>
                                 <div class="appoint-meta">
@@ -111,7 +110,7 @@
                                     <div class="meta-span">Friffith University Australian</div>
                                 </div>
                             </li>
-                			<li>
+                						<li>
                             	<span class="year">2012-2014</span>
                                 <div class="appoint-meta">
                                     <h5 class="pex-title">Senior Lecturer</h5>
@@ -125,20 +124,21 @@
                                     <div class="meta-span">School of Chemistry, Monash University</div>
                                 </div>
                             </li>
-                        </ol>
+                        </ol> -->
                     </div>
                 </div>
-			</section><!-- /.gimps-container .appoint-timeline-holder -->
-        
+						</section><!-- /.gimps-container .appoint-timeline-holder -->
+
     		<section class="gimps-container">
-                <h4 class="gimps-title">Awards &amp; Prizes</h4>
+                <!-- <h4 class="gimps-title">Awards &amp; Prizes</h4> -->
                 <div class="row">
                     <div class="col-sm-11">
-                        <ul class="awards-list list-unstyled">
+											{{ ds_content.field_awards_and_fellowship_new }}
+                        <!-- <ul class="awards-list list-unstyled">
                             <li>
                                 <span class="year">2015</span>
                                 <div class="awards-meta">
-                                    <h5 class="awards-title">{{ ds_content.field_faculty_awards_and_fellows }}</h5>
+                                    <h5 class="awards-title"></h5>
                                     <div class="awards-meta">
                                     	<span>Australian National Health and Medical Research Council</span>
                                     </div>
@@ -182,7 +182,7 @@
                                         <div class="awards-meta"><span>Pusan National University</span></div>
                                     </div>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </section><!-- /.gimps-container -->
@@ -192,5 +192,3 @@
 
 
 </{{ ds_content_wrapper }}>
-
-

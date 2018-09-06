@@ -9,7 +9,7 @@
   margin-top: 9em;
 }
 .main-container-admin{
-  margin-top: 6em;
+  margin-top: 5em;
 }
 
 /* header */
@@ -236,6 +236,14 @@ left: 100%;
 
 /* main slider section */
 
+.region-slider{
+  margin-top: 5em;
+}
+@media screen and (max-width: 768px){
+  .region-slider{
+    margin-top: 4em;
+  }
+}
 #slick-views-main-slider-block-1-1-slider .slide__content img{
   height: 25em;
 }
@@ -247,9 +255,6 @@ left: 100%;
   width: 50px;
 }
 
-.slick__arrow{
-  left: 8px;
-}
 
 .slick-prev::before{
 content: "\f104";
@@ -270,8 +275,32 @@ left: 20%;
   font-size: 45px;
   top: 0%;
   right: 20%;
-  
+
 }
+
+#slick-views-main-slider-block-1-1-slider .slide__caption{
+  background: #00000096;
+<<<<<<< HEAD
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 1.5rem;
+=======
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 1.2rem;
+>>>>>>> d11e20ba27daab320a50dae3e1a425c904448fa1
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  color: #fff;
+  margin-bottom: 8px;
+  font-family: "Montserrat";
+  }
 
 @media screen and (min-width: 767px)
 {
@@ -294,18 +323,40 @@ left: 20%;
     transition: all 0.5s;
   }
 }
-
-
-
-
-
-
-
 /* main slider section ends */
+
+/* node */
+
+.field-label{
+  width: 130px;
+  font-family: 'Ek Mukta', sans-serif;
+  font-weight: 700;
+}
+
+.field-value {
+  margin-left: 130px;
+}
+
+<<<<<<< HEAD
+
+@media only screen and (min-width: 640px){
+  .field-label{
+  width:180px;
+  }
+
+  .field-value  {
+    margin-left: 180px;
+  }
+}
+
+
+/* node-end */
+=======
+/* main slider section ends */
+>>>>>>> d11e20ba27daab320a50dae3e1a425c904448fa1
 
 
 /* footer section */
-
 .footer1 .nav > li > a:hover, .footer1 .nav > li > a:focus {
   background: transparent;
 }
@@ -333,46 +384,15 @@ left: 20%;
     margin-right: -10px;
     padding-left: 5px;
     padding-right: 5px;
-  } 
-  a.logo {
-    width: 3.5em;
   }
+
   img.sec-logo{
     max-width: 4em;
   }
 }
 
 
-@media screen and (max-width: 450px) {
-  .navbar-brand {
-    max-width: 11em;
-    padding: 8pt;
-    margin-left: 0px;
-    font-size: 0.8rem;
-    line-height: 1.3;
-  }
-  .sec-logo {
-    display: inline;
-    max-width: 4em;
-    
-  }
-  a.logo {
-    width: 5em;
-  }
 
-  img.sec-logo{
-    display: inline;
-  }
-  .region-content{
-    font-size: 12px;
-  }
-  .top-head p {
-    font-size: 10pt;
-  }
-  a.logo2{
-    margin-right: 0em;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .navbar-brand {
@@ -393,11 +413,11 @@ left: 20%;
     .footer-bottom ul.menu li{
       display: inline;
     }
-  
+
     .title-widget{
       margin-bottom: 10px;
     }
-  
+
     #main-wrap{
       padding-top: 0px;
     }
@@ -406,9 +426,9 @@ left: 20%;
       font-size: 10pt;
       width: 8em;
       text-align: initial;
-    }    
+    }
   }
-  
+
   @media screen and (max-width: 768px){
     .navbar-brand{
       font-size: 14pt;
@@ -431,8 +451,42 @@ left: 20%;
     .region-content{
         font-size: 13px;
     }
+
+#slick-views-main-slider-block-1-1-slider .slide__caption {
+  font-size: 1rem;
+  padding: 1em;
+}
   }
-  
+  @media screen and (max-width: 450px) {
+    .navbar-brand {
+      max-width: 11em;
+      padding: 8pt;
+      margin-left: 0px;
+      font-size: 0.8rem;
+      line-h4em4emeight: 1.3;
+    }
+    .sec-logo {
+      display: inline;
+      max-width: 4em;
+
+    }
+    a.logo {
+      width: 5em;
+    }
+
+    img.sec-logo{
+      display: inline;
+    }
+    .region-content{
+      font-size: 12px;
+    }
+    .top-head p {
+      font-size: 10pt;
+    }
+    a.logo2{
+      margin-right: 0em;
+    }
+  }
   @media screen and (max-width: 992px){
     .region-content{
       font-size: 13px;
@@ -445,71 +499,25 @@ left: 20%;
     }
      .navbar-brand {
       font-size: 1.4rem;
-      line-height: 3;
+      line-height: 2;
     }
   }
-  
-  
-
-@media screen and (min-width:1400px){
-  .container {
-    width: 1370px;
-  }
-}
-
-@media screen and (min-width:1600px){
-  .container {
-    width: 1570px;
-  }
-}
-@media screen and (min-width:1700px){
-  .container {
-    width: 1670px;
-  }
-  
-}
-
-@media screen and (min-width:1800px){
-  .container {
-    width: 1770px;
-  }
-}
 
 
-@media screen and (min-width:1900px){
-  .container {
-    width: 1870px;
-  }
-}
-
-@media screen and (min-width:2200px){
-  .container {
-    width: 2170px;
-  }
-
-}
 
 @media screen and (max-width: 1200px){
-  .navbar-brand{
-    /* padding: 10px 10px; */
-    margin-left: 28px;
-    padding-right: 100px;
-  }
   .region-content{
     font-size: 14px;
   }
   .node-field-label{
     font-size: 16px;
   }
- 
+
 }
 
 @media screen and (max-width: 1000px){
   .sec-logo {
     max-width: 5em;
-  }
-  .navbar-brand {
-    padding: 30px;
   }
   .region-content{
     font-size: 14px;
