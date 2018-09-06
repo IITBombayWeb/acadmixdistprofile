@@ -280,10 +280,16 @@ left: 20%;
 
 #slick-views-main-slider-block-1-1-slider .slide__caption{
   background: #00000096;
+<<<<<<< HEAD
   text-align: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   font-size: 1.5rem;
+=======
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 1.2rem;
+>>>>>>> d11e20ba27daab320a50dae3e1a425c904448fa1
   margin: 0;
   position: absolute;
   bottom: 0px;
@@ -331,6 +337,7 @@ left: 20%;
   margin-left: 130px;
 }
 
+<<<<<<< HEAD
 
 @media only screen and (min-width: 640px){
   .field-label{
@@ -344,6 +351,9 @@ left: 20%;
 
 
 /* node-end */
+=======
+/* main slider section ends */
+>>>>>>> d11e20ba27daab320a50dae3e1a425c904448fa1
 
 
 /* footer section */
