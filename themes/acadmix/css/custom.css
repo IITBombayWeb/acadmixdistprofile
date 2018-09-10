@@ -384,7 +384,16 @@ left: 20%;
     background-color: #7cc576;
 }
 
+.ol-timeline {
+    list-style: disc;
+    margin-top: 5em;
+    padding-left: 6em;
+    position: relative;
+}
 
+.ol-timeline:before{
+  left: 3em;
+}
 
 
 /* no transition on .isotope container */
