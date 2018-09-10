@@ -355,15 +355,14 @@ left: 20%;
   }
 }
 
-
-.Portfolio-nav{
+.profile-nav{
 	padding:0;
   margin: 30px 0 30px 0;
 	list-style:none;
 	text-align:center;
 }
 
-.Portfolio-nav li{
+.profile-nav li{
 	margin: 0 5px;
 	display:inline;
 }
@@ -408,9 +407,26 @@ left: 20%;
 }
 
 
-/* node-end *
-/* main slider section ends */
 
+
+/* single event section */
+.sabbi-events-item .events-item-meta .events-date{
+    display: block;
+}
+
+.event-page-header{
+  background-color: #b0cad0;
+}
+
+.event-page-header .page-title{
+  background-color: rgba(10, 77, 125, 0.7);
+  font-size: 1.5rem;
+}
+/* single event section */
+/* node-end *
+
+
+/* main slider section ends */
 /* footer section */
 .footer1 .nav > li > a:hover, .footer1 .nav > li > a:focus {
   background: transparent;

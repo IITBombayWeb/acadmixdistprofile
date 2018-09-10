@@ -1,3 +1,13 @@
+academix-lib:
+  css:
+    theme:
+      acadmix_vendor/main.css: {}
+      acadmix_vendor/bootstrap-dropdownhover.min.css: {}
+      acadmix_vendor/animate.css: {}
+  js:
+    acadmix_vendor/bootstrap-dropdownhover.min.js: {}
+  dependencies:
+    - core/jquery
 global-styling:
   css:
     theme:
@@ -9,7 +19,7 @@ global-styling:
     - core/jquery
 
 font-awesome:
-  version: 4.3.0
+  version: 4.7.0
   css:
     theme:
       includes/font-awesome/css/font-awesome.min.css: {}
@@ -21,17 +31,6 @@ webfonts:
       //fonts.googleapis.com/css?family=Montserrat:400,700: { type: external }
       //fonts.googleapis.com/css?family=Merriweather|Open+Sans: { type: external }
       //fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Oswald: {type: external }
-
-academix-lib:
-  css:
-    theme:
-      acadmix_vendor/main.css: {}
-      acadmix_vendor/bootstrap-dropdownhover.min.css: {}
-      acadmix_vendor/animate.css: {}
-  js:
-    acadmix_vendor/bootstrap-dropdownhover.min.js: {}
-  dependencies:
-    - core/jquery
 
 color.preview:
   version: VERSION
