@@ -36,17 +36,27 @@
                             </figure>
                         </a> -->
                         <div class="events-item-meta">
-                            <div class="events-loc"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <div class="events-loc mb-10"><i class="fa fa-map-marker" aria-hidden="true"></i>
                             	<span class="text">	{{ ds_content.field_event_venue.0 }}</span>
                             </div>
 
-                            <div class="events-date"><i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <div class="events-date mb-10"><i class="fa fa-calendar-o" aria-hidden="true"></i>
 
-                            	<span class="text">Start {{ ds_content.field_start_date_and_time.0 }}</span>
+                            	<span class="text"><strong>Start</strong>&nbsp;{{ ds_content.field_start_date_and_time.0 }}</span>
                             </div>
-                            <div class="events-date">  <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            	<span class="text"> End {{ ds_content.field_end_date_and_time.0 }} </span>
+                            <div class="events-date mb-10">  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            	<span class="text"><strong>End</strong>&nbsp;{{ ds_content.field_end_date_and_time.0 }} </span>
                             </div>
+                            <div class="mb-10">
+                            	{{ ds_content.field_title_of_seminar_conferenc }}
+                            </div>
+                            <div class="mb-10">
+                              {{ ds_content.field_name_of_speak_and_affiliat }}
+                            </div>
+                              {{ ds_content.field_event_types }}
+                              {{ ds_content }}
+
+
 
                             {{ ds_content.body }}
                         </div>
