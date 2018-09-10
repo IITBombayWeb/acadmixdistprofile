@@ -54,4 +54,26 @@
 		  }
 		}
   	}
+
+    $('.portfolioFilter a').click(function() {
+      $('.portfolioFilter .current').removeClass('current');
+      $(this).addClass('current');
+
+      var selector = $(this).attr('data-filter');
+      $container.isotope({
+
+        filter: selector,
+      });
+      return false;
+    });
+
+
+    $(document).ready(function(){
+      $('.Portfolio-nav > li > a').hover(function() {
+          $('.portfolioFilter .current').removeClass('current');
+      $(this).tab('show').addClass('current');
+      });
+    });
+
+
 }(jQuery);
