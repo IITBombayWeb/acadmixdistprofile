@@ -68,12 +68,12 @@
     });
 
 
-    $(document).ready(function(){
-      $('.Portfolio-nav > li > a').hover(function() {
-          $('.portfolioFilter .current').removeClass('current');
-      $(this).tab('show').addClass('current');
-      });
-    });
+    // $(document).ready(function(){
+    //   $('.Portfolio-nav > li > a').hover(function() {
+    //       $('.portfolioFilter .current').removeClass('current');
+    //   $(this).tab('show').addClass('current');
+    //   });
+    // });
 
 
 }(jQuery);
