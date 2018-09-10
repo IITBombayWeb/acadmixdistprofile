@@ -46,18 +46,15 @@
 		             <p class="text-foc-md"></p>
 		             <p class="text-foc-md">{{ ds_content.field_faculty_category.0 }}</p>
 		             <p class="text-foc-md">{{ ds_content.field_faculty_designation.0 }}</p>
-
-
-						 			<div class="portfolioFilter">
-						 				<ul class="Portfolio-nav ">
-						 					<li class="active"><a data-toggle="pill" href="#personal" data-filter=".personal" class="current">Personal Information</a></li>
-						 					<li><a data-toggle="pill" href="#rnd" data-filter=".rnd">R&D</a></li>
-						 					<li><a data-toggle="pill" href="#teaching" data-filter=".teaching">Teaching</a></li>
-						 					<li><a data-toggle="pill" href="#research-area" data-filter=".research-area">Research Areas</a></li>
-						 				</ul>
-						 			</div>
 		      </article>
-					<div class="tab-content">
+					<div class="profile-nav">
+						<ul class="nav nav-pills">
+							<li class="active"><a data-toggle="pill" href="#personal">Personal Information</a></li>
+							<li><a data-toggle="pill" href="#rnd" >R&D</a></li>
+							<li><a data-toggle="pill" href="#teaching" >Teaching</a></li>
+							<li><a data-toggle="pill" href="#research-area">Research Areas</a></li>
+						</ul>
+						<div class="tab-content">
 						<div class="personal tab-pane fade in active" id="personal">
 
 							<div class="stage-content-biog">
@@ -217,8 +214,15 @@
 							{{ ds_content.field_research_area }}
 						</div>
 					</div>
+					</div>
+
+
 
 	      </div><!-- #main col-sm-8 -->
+
+
+
+
 	   </div> <!-- row -->
 	</div> <!-- container -->
 

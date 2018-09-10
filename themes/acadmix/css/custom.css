@@ -368,7 +368,7 @@ left: 20%;
 	display:inline;
 }
 
-.Portfolio-nav li a{
+.profile-nav li a{
 	display:inline-block;
 	padding:10px 22px;
 	color:#222222;
@@ -380,33 +380,13 @@ left: 20%;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 
-.Portfolio-nav li a:hover{
-	background:#7cc576;
-	color:#fff;
-	text-decoration:none;
-}
 
-.portfolioContainer{
-	margin:0 auto;
-	padding-left:15px;
-}
-
-.Portfolio-box{
-	text-align:center;
-	margin-bottom:30px;
-	height:350px;
-	width:350px;
-	overflow:hidden;
-	float:left;
-	padding:0;
+.profile-nav .nav-pills > li.active > a, .profile-nav .nav-pills > li.active > a:hover, .profile-nav .nav-pills > li.active > a:focus {
+    background-color: #7cc576;
 }
 
 
-.Portfolio-nav li a.current{
-	background:#7cc576;
-	color:#fff;
-	text-decoration:none;
-}
+
 
 /* no transition on .isotope container */
 
