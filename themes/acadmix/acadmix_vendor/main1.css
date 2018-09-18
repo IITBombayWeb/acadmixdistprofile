@@ -1,0 +1,34 @@
+
+body {
+  /* position: initial; */
+  overflow-x: hidden;
+  font-family: "COOP-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  min-height: 100%;
+  background-color: #fff;
+  line-height: 1.5;
+  font-size: 1rem;
+  color:#343536;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  line-height: 1.41398;
+  font-weight: 700; }
+
+h2 {
+  font-size: 28px; }
+
+.read-more {
+  text-decoration: underline;
+}
+select:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

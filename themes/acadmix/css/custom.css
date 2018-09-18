@@ -335,6 +335,15 @@ left: 20%;
 
 /* node */
 
+  .sabbi-page-header.page-header-lg {
+    min-height: 265px;
+    /* width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    height: 100px;
+    left: 50%; */
+  }
+
 .field-label{
   width: 130px;
   font-family: 'Ek Mukta', sans-serif;
@@ -430,6 +439,19 @@ left: 20%;
 .event-page-header .page-title{
   background-color: rgba(10, 77, 125, 0.7);
 }
+
+.event-venue-label:before {
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    margin: 0 8px 0 0;
+  }
+
+.event-date-label:before {
+    content: "\f133";
+    font-family: "Font Awesome 5 Free";
+    margin: 0 8px 0 0;
+  }
+
 /* single event section */
 /* node-end *
 
