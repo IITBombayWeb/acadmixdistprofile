@@ -56,7 +56,9 @@
 
 <h3 class="title mg_0">{{ fields.title.content }}</h3>
 
-	<div><span class="date">{{ fields.field_event_date.content }}</span> <span class="date">{{ fields.field_event_venue.content }}</span></div>
-  
-
-  
+	<div>
+		<span class="date"><i class="fas fa-clock"></i>&nbsp;{{ fields.field_start_date_and_time.content }}</span>
+		<div>
+			<span class="date"><i class="fas fa-map-marker-alt"></i>&nbsp;{{ fields.field_event_venue.content }}</span>
+		</div>
+	</div>
