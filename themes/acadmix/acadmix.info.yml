@@ -33,7 +33,7 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - acadmix/academix-lib
   - acadmix/webfonts
   - acadmix/smartmenus
+  - acadmix/academix-lib
   - acadmix/global-styling
