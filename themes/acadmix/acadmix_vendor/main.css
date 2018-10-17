@@ -920,7 +920,8 @@ h1.academix-logo {
    	background: none;
    }
    .menu-base-theme li a {
-     color: #234645;
+    /* color: #234645; */
+    color: #337ab7;
    	border-bottom: 1px solid #383737;
    	line-height: 100%;
    	padding: 12px 15px;
@@ -937,7 +938,8 @@ h1.academix-logo {
    .menu-base-theme li a:active,
    .menu-base-theme li a.highlighted {
      color: #ffffff;
-   	background: #234645;
+   	/* background: #234645; */
+    background: #337ab7;
    	line-height: 100%;
      padding: 12px 15px;
      -webkit-transition: all 0.5s;
@@ -1009,7 +1011,8 @@ h1.academix-logo {
    		padding: 12px 15px;
    	}
    	.region-navigation-collapsible ul ul li a {
-   		color: #234645;
+   		/* color: #234645; */
+      color: #337ab7;
    		font-size: 0.8rem;
    	}
    	.region-navigation-collapsible li {
@@ -1018,7 +1021,8 @@ h1.academix-logo {
    	.region-navigation-collapsible li a {
    		background: none;
    		border: 0;
-   		color: #234645;
+   		/* color: #234645; */
+      color: #337ab7;
    	}
    	.region-navigation-collapsible li a span.sub-arrow {
    		padding: 0;
@@ -1042,16 +1046,19 @@ h1.academix-logo {
    	}
    	.region-navigation-collapsible li.active a,
    	.region-navigation-collapsible li a.is-active {
-   		background: #234645;
+   		/* background: #234645; */
+      background: #337ab7;
    			color: #ffffff;
    	}
    	.region-navigation-collapsible li a.is-active.has-submenu {
    		background: none;
-       color: #234645;
+       /* color: #234645; */
+       color: #337ab7;
    	}
      .region-navigation-collapsible li a.is-active.has-submenu:hover{
        color: #ffffff;
-       background: #234645;
+       /* background: #234645; */
+       background: #337ab7;
      }
 
    }
