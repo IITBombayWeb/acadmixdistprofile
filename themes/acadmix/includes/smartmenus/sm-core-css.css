@@ -125,7 +125,8 @@
 
   /* ...end */
   .menu-base-theme {
-    background: #3092c0;
+    /* background: #3092c0; */
+    background: none;
   }
   .menu-base-theme a, .menu-base-theme a:hover,
   .menu-base-theme a:focus, .menu-base-theme a:active,
@@ -162,12 +163,12 @@
   .menu-base-theme a.highlighted span.sub-arrow:before {
     display: none;
   }
-  .menu-base-theme > li {
+  /* .menu-base-theme > li {
     border-left: 1px solid #2b82ac;
   }
   .menu-base-theme > li:first-child {
     border-left: 0;
-  }
+  } */
   .menu-base-theme ul {
     border: 1px solid #a8a8a8;
     padding: 0;

@@ -894,10 +894,7 @@ h1.academix-logo {
  .menu-padding {
      padding: 10px 0;
  }
- .menu-base-theme {
-   	background: none;
-   }
-   
+
  @media (max-width: 767px) {
 
    /* .navbar-toggle{
@@ -915,7 +912,6 @@ h1.academix-logo {
      margin-bottom: 3px;
      }
    }
-
 
    .menu-base-theme {
    	background: none;
