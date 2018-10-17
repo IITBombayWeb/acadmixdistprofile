@@ -268,24 +268,24 @@ left: 100%;
 
 
 .slick-prev::before{
-content: "\f104";
-font-family: FontAwesome;
-padding: 0 5px;
-color: #ffffff;
-position: absolute;
-font-size: 45px;
-top: 0%;
-left: 20%;
-}
-.slick-next::before{
-  content: "\f105";
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   padding: 0 5px;
   color: #ffffff;
   position: absolute;
   font-size: 45px;
   top: 0%;
-  right: 20%;
+  left: 20%;
+  content: "\f191";
+}
+.slick-next::before{
+  font-family: "Font Awesome 5 Free";
+  padding: 0 5px;
+  color: #ffffff;
+  position: absolute;
+  font-size: 45px;
+  top: 0%;
+  left: 20%;
+  content: "\f152";
 
 }
 
