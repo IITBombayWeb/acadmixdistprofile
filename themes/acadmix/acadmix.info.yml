@@ -35,5 +35,5 @@ regions:
 libraries:
   - acadmix/academix-lib
   - acadmix/webfonts
-  - acadmix/font-awesome
+  - ircc_bs/smartmenus
   - acadmix/global-styling
