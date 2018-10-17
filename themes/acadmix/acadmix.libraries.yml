@@ -29,4 +29,13 @@ webfonts:
       //fonts.googleapis.com/css?family=Merriweather|Open+Sans: { type: external }
       //fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Oswald: {type: external }
 
-#    - core/drupalSettings
+# smartmenus
+smartmenus:
+  version: 1.x
+  css:
+    theme:
+      includes/smartmenus/sm-core-css.css: {}
+  js:
+    includes/smartmenus/jquery.smartmenus.min.js: {}
+  dependencies:
+    - core/jquery
