@@ -34,6 +34,6 @@ regions:
 
 libraries:
   - acadmix/academix-lib
-  - acadmix/global-styling
   - acadmix/webfonts
   - acadmix/font-awesome
+  - acadmix/global-styling
