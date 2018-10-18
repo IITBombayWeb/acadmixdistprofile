@@ -55,6 +55,24 @@
 		}
   	}
 
+    $('#back-to-top').on('click', function(){
+      $('body,html').animate({
+      scrollTop: 0
+      }, 600);
+    });
+    ///////////////////////////
+  	// On Scroll
+  	$(window).on('scroll', function() {
+  		var wScroll = $(this).scrollTop();
+
+  		// Fixed nav
+  		wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
+
+  		// Back To Top Appear
+  		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+  	});
+
+
     // $('.portfolioFilter a').click(function() {
     //   $('.portfolioFilter .current').removeClass('current');
     //   $(this).addClass('current');
@@ -87,16 +105,20 @@
 
     	//Mobile menu toggle
     	jQuery('.navbar-toggle').click(function(){
-    		jQuery('.region-primary-menu').slideToggle();
+    		jQuery('.region-navigation-collapsible').slideToggle();
     	});
 
     	//Mobile dropdown menu
     	if ( jQuery(window).width() < 767) {
-    		jQuery(".region-primary-menu li a:not(.has-submenu)").click(function () {
-    			jQuery('.region-primary-menu').hide();
+    		jQuery(".region-navigation-collapsible li a:not(.has-submenu)").click(function () {
+    			jQuery('.region-navigation-collapsible').hide();
     	    });
     	}
-
     }
+
+    // Preloader
+    $(window).on('load', function() {
+      $("#preloader").delay(600).fadeOut();
+    });
 
 }(jQuery);
