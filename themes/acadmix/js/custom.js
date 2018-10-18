@@ -55,6 +55,24 @@
 		}
   	}
 
+    $('#back-to-top').on('click', function(){
+      $('body,html').animate({
+      scrollTop: 0
+      }, 600);
+    });
+    ///////////////////////////
+  	// On Scroll
+  	$(window).on('scroll', function() {
+  		var wScroll = $(this).scrollTop();
+
+  		// Fixed nav
+  		wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
+
+  		// Back To Top Appear
+  		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+  	});
+
+
     // $('.portfolioFilter a').click(function() {
     //   $('.portfolioFilter .current').removeClass('current');
     //   $(this).addClass('current');
