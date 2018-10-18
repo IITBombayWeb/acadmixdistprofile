@@ -87,16 +87,20 @@
 
     	//Mobile menu toggle
     	jQuery('.navbar-toggle').click(function(){
-    		jQuery('.region-primary-menu').slideToggle();
+    		jQuery('.region-navigation-collapsible').slideToggle();
     	});
 
     	//Mobile dropdown menu
     	if ( jQuery(window).width() < 767) {
-    		jQuery(".region-primary-menu li a:not(.has-submenu)").click(function () {
-    			jQuery('.region-primary-menu').hide();
+    		jQuery(".region-navigation-collapsible li a:not(.has-submenu)").click(function () {
+    			jQuery('.region-navigation-collapsible').hide();
     	    });
     	}
-
     }
+
+    // Preloader
+    $(window).on('load', function() {
+      $("#preloader").delay(600).fadeOut();
+    });
 
 }(jQuery);

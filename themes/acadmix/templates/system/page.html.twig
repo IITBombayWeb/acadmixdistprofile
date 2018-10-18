@@ -73,9 +73,8 @@
             {% endif %}
 
 
-              <div class="navbar-header col-sm-12 col-md-12 ">
+              <div class="navbar-header col-sm-12 col-md-12">
                 {{ page.header }}
-              </div>
                 {% if page.navigation_collapsible %}
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
                     <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
@@ -84,16 +83,18 @@
                     <span class="icon-bar"></span>
                   </button>
                 {% endif %}
-
-
+              </div>
             {% if page.navigation_collapsible %}
-                <div id="primary-menu" class="navbar-collapse collapse">
+            <div class="row">
+              <div class="col-sm-3 col-md-3 pull-right">
+                {{ page.header_search }}
+              </div>
+                <div id="primary-menu" class="col-sm-9 col-md-9 navbar-collapse collapse navbar-left">
                   {{ page.navigation_collapsible }}
-                    <div class="col-sm-3 col-md-3 pull-right">
-                      {{ page.header_search }}
-                    </div>
                 </div>
+            </div>
             {% endif %}
+
 
             {% if not navbar_attributes.hasClass(container) %}
               </div>
