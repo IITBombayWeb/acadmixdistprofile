@@ -2218,9 +2218,7 @@ ul.list-unstyled.lst_news_list {
         min-width: 170px;
         display: inline-block;
       }
-       .sabbi-events-item .events-item-meta p{
-        margin-top: 10px;
-       }
+
         .sabbi-events-item .events-item-meta .events-date > i {
           margin-right: 10px;
           font-size: 16px;
