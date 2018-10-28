@@ -432,6 +432,8 @@ left: 100%;
 
 .event-page-header{
   background-color: #b0cad0;
+  background: url(../img/seats.jpg);
+  background-size: cover;
 }
 
 .event-page-header .page-title{
