@@ -35,18 +35,13 @@
                                 </figcaption>
                             </figure>
                         </a> -->
-                        <div class="events-item-meta">
-                            <div class="events-loc">
-                            	<span class="text">{{ ds_content.field_event_venue }}</span>
-                            </div>
+                        <div class="events-item-meta row">
+                            {{ ds_content.field_event_venue }}
 
                             
 
                             	 {{ ds_content.field_start_date_and_time }}
-                           
-                            <div class="events-date">
-                            	<span class="text">{{ ds_content.field_end_date_and_time }} </span>
-                            </div>
+                           {{ ds_content.field_end_date_and_time }}
                             	{{ ds_content.field_title_of_seminar_conferenc }}
                               {{ ds_content.field_name_of_speak_and_affiliat }}
                             
