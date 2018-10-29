@@ -47,7 +47,10 @@
                             </div>]
                          #}
                             {{ ds_content.field_news_type }}
-                            {{ ds_content.field_news_date }}              
+                            {% if ds_content.field_news_date %}
+                                <i class="fas fa-calendar-alt"></i>
+                            {% endif %}
+                            {{ ds_content.field_news_date }}
                             {{ ds_content.body }}
                         </div>
                       </article><!-- /.sabbi-events-item -->
