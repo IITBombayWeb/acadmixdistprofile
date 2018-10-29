@@ -14,7 +14,7 @@
   {{ title_suffix.contextual_links }}
 
 
-	<header class="sabbi-page-header page-header-lg event-page-header ">
+	<header class="sabbi-page-header page-header-lg news-page-header ">
         <div class="page-header-content conternt-center">
             <div class="header-title-block">
                 <h1 class="page-title">{{ title }}</h1>
@@ -35,12 +35,21 @@
                                 </figcaption>
                             </figure>
                         </a> -->
-                            <div class="events-item-meta">
-                                {{ ds_content.field_event_venue }}
-                                {{ ds_content.field_news_date }}
-                                {{ ds_content.field_news_type }}
-                                {{ ds_content.body }}
+                        {{ ds_content.field_news_images }}
+                        <div class="events-item-meta">
+
+                         {#    
+                            <div class="events-date">
+                            	<span class="text"> {{ ds_content.field_news_date }}</span>
                             </div>
+                            <div class="events-loc">
+                                <span class="text">{{ ds_content.field_event_venue }}</span>
+                            </div>]
+                         #}
+                            {{ ds_content.field_news_type }}
+                            {{ ds_content.field_news_date }}              
+                            {{ ds_content.body }}
+                        </div>
                       </article><!-- /.sabbi-events-item -->
                 </div>
             </div>

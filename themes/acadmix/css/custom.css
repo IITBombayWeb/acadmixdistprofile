@@ -453,6 +453,35 @@ left: 100%;
   }
 
 /* single event section */
+
+/* single news section */
+.sabbi-events-item .events-item-meta .events-date{
+    display: block;
+}
+
+.news-page-header{
+  background-color: #b0cad0;
+  background: url(../img/news.jpg);
+  background-size: cover;
+}
+
+.news-page-header .page-title{
+  background-color: rgba(10, 77, 125, 0.7);
+}
+
+.news-venue-label:before {
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    margin: 0 8px 0 0;
+  }
+
+.news-date-label:before {
+    content: "\f133";
+    font-family: "Font Awesome 5 Free";
+    margin: 0 8px 0 0;
+  }
+
+/* single news section */
 /* node-end *
 
 

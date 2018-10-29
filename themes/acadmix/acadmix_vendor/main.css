@@ -2207,10 +2207,10 @@ ul.list-unstyled.lst_news_list {
     .sabbi-events-item .events-item-meta {
       color: #666666;
       overflow: hidden; }
-     /* .sabbi-events-item .events-item-meta .events-loc {
+      .sabbi-events-item .events-item-meta .events-loc {
         display: inline-block;
         padding-right: 25px; }
-*/        .sabbi-events-item .events-item-meta .events-loc > i {
+        .sabbi-events-item .events-item-meta .events-loc > i {
           font-size: 16px;
           font-size: 1.14286rem;
           margin-right: 10px; }
