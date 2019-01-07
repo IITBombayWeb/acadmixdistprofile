@@ -1,7 +1,7 @@
 name: iitbacademic
 core: 8.x
 type: profile
-description: 'IITB Academic Profile1'
+description: 'IITB Academic Profile1 Test'
 version: '8.1.0'
 
 distribution:
