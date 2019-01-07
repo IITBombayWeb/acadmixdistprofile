@@ -67,7 +67,38 @@
         ]
 
       %}
+
+
         <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+        <div class="top-nav">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="top-nav-brand">Indian Institute of Technology Bombay</div>
+              </div>
+              
+              {% if show_social_icon %}
+                <div class="col-md-6">
+                  <p class="social-media">
+                    {% if facebook_url %}
+                      <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+                    {% endif %}
+                    {% if google_plus_url %}
+                      <a href="{{ google_plus_url }}"  class="google-plus" target="_blank" ><i class="fab fa-google-plus-g"></i></a>
+                    {% endif %}
+                    {% if twitter_url %}
+                      <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
+                    {% endif %}
+                    {% if linkedin_url %}
+                      <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    {% endif %}
+                  </p>
+                </div>
+                {% endif %}             
+              </div>
+            </div>
+          </div>
+
             {% if not navbar_attributes.hasClass(container) %}
               <div class="{{ container }}">
             {% endif %}
