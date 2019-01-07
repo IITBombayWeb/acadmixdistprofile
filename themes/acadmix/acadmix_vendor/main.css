@@ -2318,10 +2318,10 @@ ul.page-numbers {
 -------------------------------- */
 /* style footer */
 .section-footer {
-  background: url(../img/footer_bg.jpg);
+  /*background: url(../img/footer_bg.jpg);*/
   background-color: #EDF2F6;
-  background-repeat: round;
-  background-size: contain;
+/*  background-repeat: round;
+  background-size: contain;*/
   margin-bottom: 0;
   margin-top: 0; }
   .section-footer .footer-site-info{
