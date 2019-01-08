@@ -11,11 +11,15 @@
 }
 
 body {
- color: #343536;
+ color: #151515;
 } 
 
 a {
   color: #337ab7;
+}
+
+#back-to-top{
+    background-color: #337ab7;
 }
 
 a:hover {

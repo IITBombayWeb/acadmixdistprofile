@@ -10,6 +10,7 @@ $info = [
   'fields' => [
     'topnav' => t('Header and Footer Text color'),
     'footer' => t('Header and Footer background'),
+    'link' => t('Link color'),
   ],
   // Pre-defined color schemes.
   'schemes' => [
@@ -18,6 +19,7 @@ $info = [
       'colors' => [
         'topnav' => '#ffffff',
         'footer' => '#444444',
+        'link' => '#337ab7',
       ],
     ],
   ],
