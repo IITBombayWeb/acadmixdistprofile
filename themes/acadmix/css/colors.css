@@ -5,7 +5,7 @@
 	background-color: #444444;
 }
 */
-.section-footer, .top-nav *{
+.section-footer *, .top-nav *{
 	color: #ffffff;
 }
 
