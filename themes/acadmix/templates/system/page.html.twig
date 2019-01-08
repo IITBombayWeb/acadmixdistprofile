@@ -73,31 +73,36 @@
         <div class="top-nav">
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
-                <div class="top-nav-brand">Indian Institute of Technology Bombay</div>
-              </div>
-              
-              {% if show_social_icon %}
+              {% if show_topnav_branding %}              
                 <div class="col-md-6">
+                  <div class="top-nav-brand"><a href="{{ topnav_branding_url }}" target="_blank" title="{{ 'IIT Bombay Home'|t }}">{{ topnav_branding_text }}</a></div>
+                </div>
+              {% endif %} 
+              {% if show_social_icon %}
+                {% if show_topnav_branding %}
+                  <div class="col-md-6 ">
+                {% else %}
+                  <div class="col-md-12 ">
+                {% endif %}
                   <p class="social-media">
                     {% if facebook_url %}
-                      <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+                      <a href="{{ facebook_url }}"  class="facebook" target="_blank"  title="{{ 'Facebook'|t }}" ><i class="fab fa-facebook-f"></i></a>
                     {% endif %}
                     {% if google_plus_url %}
-                      <a href="{{ google_plus_url }}"  class="google-plus" target="_blank" ><i class="fab fa-google-plus-g"></i></a>
+                      <a href="{{ google_plus_url }}"  class="google-plus" target="_blank"  title="{{ 'Google plus'|t }}" ><i class="fab fa-google-plus-g"></i></a>
                     {% endif %}
                     {% if twitter_url %}
-                      <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
+                      <a href="{{ twitter_url }}" class="twitter" target="_blank"  title="{{ 'Twitter'|t }}"><i class="fab fa-twitter"></i></a>
                     {% endif %}
                     {% if linkedin_url %}
-                      <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="{{ linkedin_url }}" class="linkedin" target="_blank"  title="{{ 'Linked In'|t }}"><i class="fab fa-linkedin-in"></i></a>
                     {% endif %}
                   </p>
                 </div>
-                {% endif %}             
-              </div>
+              {% endif %}             
             </div>
           </div>
+        </div>
 
             {% if not navbar_attributes.hasClass(container) %}
               <div class="{{ container }}">
