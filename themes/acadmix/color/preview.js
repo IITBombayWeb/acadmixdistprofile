@@ -15,9 +15,9 @@
       var $colorPalette = $form.find('.js-color-palette');
 
 
-      $colorPreview.find('.color-preview-header, .color-preview-footer-wrapper').css('color', $colorPalette.find('input[name="palette[hftext]"]').val());
+      $colorPreview.find('.color-preview-header, .color-preview-footer-wrapper').css('color', $colorPalette.find('input[name="palette[topnav]"]').val());
       // $colorPreview.find('').css('color', $colorPalette.find('input[name="palette[topnavtext]"]').val());
-      $colorPreview.find('.color-preview-header, .color-preview-footer-wrapper').css('background-color', $colorPalette.find('input[name="palette[hfbg]"]').val());
+      $colorPreview.find('.color-preview-header, .color-preview-footer-wrapper').css('background-color', $colorPalette.find('input[name="palette[footer]"]').val());
 
     }
   };
