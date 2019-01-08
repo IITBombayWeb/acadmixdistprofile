@@ -65,6 +65,6 @@ facebook_url: 'https://www.facebook.com/iitbombay'
 twitter_url: 'https://twitter.com/iitbombay'
 google_plus_url: 'https://plus.google.com/+iitbombay'
 linkedin_url: 'https://www.linkedin.com/edu/school?id=13496&trk=edu-cp-title'
-show_topnav_branding: 1
-topnav_branding_text: 'Indian Institute of Technology Bombay'
-topnav_branding_url: 'http://www.iitb.ac.in/'
+show_heading_branding: 1
+heading_branding_text: 'Indian Institute of Technology Bombay'
+heading_branding_url: 'http://www.iitb.ac.in/'

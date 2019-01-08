@@ -30,9 +30,9 @@ function acadmix_preprocess_page(&$variables) {
   $variables['twitter_url'] = theme_get_setting('twitter_url');
   $variables['linkedin_url'] = theme_get_setting('linkedin_url');
 
-  $variables['show_topnav_branding'] = theme_get_setting('show_topnav_branding');
-  $variables['topnav_branding_text'] = theme_get_setting('topnav_branding_text');
-  $variables['topnav_branding_url'] = theme_get_setting('topnav_branding_text');
+  $variables['show_heading_branding'] = theme_get_setting('show_heading_branding');
+  $variables['heading_branding_text'] = theme_get_setting('heading_branding_text');
+  $variables['heading_branding_url'] = theme_get_setting('heading_branding_text');
 
   //To get the current URL
   $current_url  = \Drupal::request()->getRequestUri();
@@ -105,27 +105,27 @@ function acadmix_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
         '#default_value' => theme_get_setting('linkedin_url'),
       );
 
-      $form['acadmix_settings']['topnav_branding'] = array(
+      $form['acadmix_settings']['heading_branding'] = array(
         '#type' => 'details',
-        '#title' => t('Top nav Branding'),
+        '#title' => t('Heading Branding'),
         '#collapsible' => TRUE,
         '#collapsed' => FALSE,
       );
-      $form['acadmix_settings']['topnav_branding']['show_topnav_branding'] = array(
+      $form['acadmix_settings']['heading_branding']['show_heading_branding'] = array(
         '#type' => 'checkbox',
-        '#title' => t('Show Top Nav Branding'),
-        '#default_value' => theme_get_setting('show_topnav_branding'),
+        '#title' => t('Show Heading Branding'),
+        '#default_value' => theme_get_setting('show_heading_branding'),
         '#description'   => t("Show/Hide Top Nav Branding"),
       );
-      $form['acadmix_settings']['topnav_branding']['topnav_branding_text'] = array(
+      $form['acadmix_settings']['heading_branding']['heading_branding_text'] = array(
         '#type' => 'textfield',
-        '#title' => t('Top Nav Branding Text'),
-        '#default_value' => theme_get_setting('topnav_branding_text'),
+        '#title' => t('Heading Branding Text'),
+        '#default_value' => theme_get_setting('heading_branding_text'),
       );
-      $form['acadmix_settings']['topnav_branding']['topnav_branding_url'] = array(
+      $form['acadmix_settings']['heading_branding']['heading_branding_url'] = array(
         '#type' => 'textfield',
-        '#title' => t('Top Nav Branding URL'),
-        '#default_value' => theme_get_setting('topnav_branding_url'),
+        '#title' => t('Heading Branding URL'),
+        '#default_value' => theme_get_setting('heading_branding_url'),
       );
 
       $form['acadmix_info'] = array(
