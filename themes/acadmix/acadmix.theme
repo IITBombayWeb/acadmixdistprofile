@@ -6,6 +6,8 @@
 
 use Drupal\Core\Template\RenderWrapper;
 use Drupal\Core\Template\Attribute;
+use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\Xss;
 use Drupal\search\Form\SearchBlockForm;
 use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Core\Form\FormStateInterface;
@@ -13,7 +15,8 @@ use Drupal\system\Form\ThemeSettingsForm;
 use Drupal\file\Entity\File;
 use Drupal\Core\Url;
 use Drupal\file\Plugin\Core\Entity\FileInterface;
-
+use Drupal\Core\Config\ConfigFactoryInterface;
+  
 /**
  * Implements hook_preprocess_page() for block templates.
  */
@@ -64,10 +67,6 @@ function acadmix_preprocess_block(&$variables) {
  */
 function acadmix_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
 
-      $form['acadmix_info'] = array(
-        '#markup' => '<h2><br/>Other Theme Settings</h2><div class="messages messages--warning">Clear cache after making any changes in theme settings. <a href="../../config/development/performance">Click here to clear cache</a></div>'
-      );
-
       //Social Icon Link
       $form['acadmix_settings']['social_icon'] = array(
         '#type' => 'details',
@@ -100,5 +99,8 @@ function acadmix_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
         '#type' => 'textfield',
         '#title' => t('LinkedIn URL'),
         '#default_value' => theme_get_setting('linkedin_url'),
+      );
+      $form['acadmix_info'] = array(
+        '#markup' => '<div class="messages messages--warning">Clear cache after making any changes in theme settings. <a href="../../config/development/performance">Click here to clear cache</a></div>'
       );
   }

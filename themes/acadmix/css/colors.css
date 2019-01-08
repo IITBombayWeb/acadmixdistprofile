@@ -1,0 +1,15 @@
+/*.top-nav *{
+    color: #FFFFFF;
+}
+.top-nav{
+	background-color: #444444;
+}
+*/
+
+.section-footer, .top-nav{
+	background-color: #444444;
+}
+
+a {
+  color: #0071b3;
+}
