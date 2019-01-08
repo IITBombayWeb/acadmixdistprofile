@@ -59,11 +59,12 @@ table_responsive: '-1'
 cdn_provider_import_data: ''
 table: ''
 navbar_position: fixed-top
+show_social_icon: 1
 #default value for social media
 facebook_url: 'https://www.facebook.com/iitbombay'
 twitter_url: 'https://twitter.com/iitbombay'
 google_plus_url: 'https://plus.google.com/+iitbombay'
 linkedin_url: 'https://www.linkedin.com/edu/school?id=13496&trk=edu-cp-title'
-
-# Toggle Social Media, Credit Link and Slideshow
-show_social_icon: 1
+show_topnav_branding: 1
+topnav_branding_text: 'Indian Institute of Technology Bombay'
+topnav_branding_url: 'http://www.iitb.ac.in/'

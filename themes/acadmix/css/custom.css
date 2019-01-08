@@ -15,7 +15,7 @@
 
 /* top_nav */
 .top-nav * {
-    color: #fff;
+    color: #ffffff;
 }
 
 .top-nav{
@@ -29,6 +29,11 @@
 .top-nav-brand{
     font-size: 1.1em;
 }
+.top-nav-brand a:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 
 .top-nav p {
     margin: 0;
