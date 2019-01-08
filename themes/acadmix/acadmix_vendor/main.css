@@ -917,9 +917,7 @@ h1.academix-logo {
    .menu-base-theme li a:focus,
    .menu-base-theme li a:active,
    .menu-base-theme li a.highlighted {
-   	/* background: #234645; */
-    /* background: #337ab7; */
-    border-bottom: 4px solid #337ab7;
+    border-bottom: 4px solid;
    	line-height: 100%;
      padding: 12px 15px;
      -webkit-transition: all 0.5s;
@@ -969,7 +967,6 @@ h1.academix-logo {
        .menu-base-theme li a:focus,
        .menu-base-theme li a:active,
        .menu-base-theme li a.highlighted {
-       /* color: #ffffff;*/
         background: #06569a;
         border-bottom: 1px solid #b3b3b3;
       }
@@ -1010,14 +1007,12 @@ h1.academix-logo {
            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
        	}
-        .menu-base-theme li a:hover,
+     /*   .menu-base-theme li a:hover,
         .menu-base-theme li a:focus,
         .menu-base-theme li a:active,
         .menu-base-theme li a.highlighted {
-        /*  color: #337ab7;*/
-        	/* background: #234645; */
            border-bottom: 4px solid #337ab7;
-       }
+       }*/
        	.region-navigation-collapsible ul ul li a,
        	.region-navigation-collapsible ul ul li a:hover,
        	.region-navigation-collapsible ul ul li a:focus,

@@ -26,6 +26,12 @@ a {
    border-bottom-color: #337ab7;
  }
 
+.menu-base-theme li a:hover,
+.menu-base-theme li a:focus,
+.menu-base-theme li a:active,
+.menu-base-theme li a.highlighted {
+   border-bottom-color: #337ab7;
+}
 #back-to-top{
     background-color: #337ab7;
 }
