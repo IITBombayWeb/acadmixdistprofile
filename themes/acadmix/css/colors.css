@@ -9,6 +9,9 @@
 	color: #ffffff;
 }
 
+.section-footer a:hover, .top-nav a:hover{
+	color: #ffffff;
+}
 .section-footer, .top-nav{
 	background-color: #444444;
 }
