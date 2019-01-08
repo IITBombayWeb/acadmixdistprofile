@@ -133,11 +133,11 @@
   .menu-base-theme a.highlighted {
     padding: 13px 24px;
     /* background: #3092c0; */
-    border-bottom: 4px solid #337ab7;
+   /* border-bottom: 4px solid #337ab7;*/
   }
   .menu-base-theme a:hover, .menu-base-theme a:focus, .menu-base-theme a:active, .menu-base-theme a.highlighted {
     /* background: #2b82ac; */
-       border-bottom: 4px solid #337ab7;
+       /*border-bottom: 4px solid #337ab7;*/
   }
   .menu-base-theme a.current {
     background: #006892;
