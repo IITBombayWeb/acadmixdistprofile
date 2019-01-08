@@ -6,8 +6,12 @@
 .section-footer a:hover, .top-nav a:hover{
 	color: #ffffff;
 }
-.section-footer, .top-nav{
+.section-footer, .top-nav, {
 	background-color: #444444;
+}
+
+.navbar-default .navbar-brand {
+    color: #444444;
 }
 
 body {
