@@ -16,7 +16,7 @@ $info = [
     'default' => [
       'title' => t('Acadmix (default)'),
       'colors' => [
-        'topnav' = '#ffffff'
+        'topnav' = '#ffffff',
         'footer' => '#444444',
       ],
     ],
