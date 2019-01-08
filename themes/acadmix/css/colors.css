@@ -18,11 +18,19 @@ a {
   color: #337ab7;
 }
 
+.region-navigation-collapsible li.active a, .region-navigation-collapsible li a.is-active {
+  border-bottom-color: #337ab7;
+}
+
+ .region-navigation-collapsible li a.is-active.has-submenu:hover{
+   border-bottom-color: #337ab7;
+ }
+
 #back-to-top{
     background-color: #337ab7;
 }
 
 a:hover {
-
 	color: #337ab7;
 }
+
