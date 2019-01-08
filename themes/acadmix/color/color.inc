@@ -8,23 +8,23 @@
 $info = [
   // Available colors and color labels used in theme.
   'fields' => [
-    'topnav' => t('Header background'),
-    'footer' => t('header and Footer background'),
+    'hftext' => t('Header background'),
+    'hfbg' => t('header and Footer background'),
   ],
   // Pre-defined color schemes.
   'schemes' => [
     'default' => [
       'title' => t('Blue Lagoon (default)'),
       'colors' => [
-        'topnav' => '#4c4c4c',
-        'footer' => '#444444',
+        'hftext' => '#ffffff',
+        'hfbg' => '#444444',
       ],
     ],
-    'firehouse' => [
+    'bluish' => [
       'title' => t('Firehouse'),
       'colors' => [
-      'topnav' => '#4d4f4c',
-      'footer' => '#edf2fe',        
+      'hftext' => '#ffffff',
+      'hfbg' => '#006699',        
       ],
     ],
   ],
