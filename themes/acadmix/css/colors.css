@@ -10,8 +10,8 @@
 	background-color: #444444;
 }
 
-html,body{
- color: #343536;
+body {
+ color: #000000;
 } 
 
 a {
@@ -19,6 +19,6 @@ a {
 }
 
 a:hover{
-	
+
 	color: #337ab7;
 }
