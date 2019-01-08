@@ -6,15 +6,15 @@
   }
 
 .main-container{
-  margin-top: 9em;
+  margin-top: 7em;
 }
 .main-container-admin{
-  margin-top: 5em;
+  margin-top: 7em;
 }
 
 #main-content{
     z-index: 1;
-    background-color: #fff;
+    background-color: #ffffff;
     position: relative;
 }
 

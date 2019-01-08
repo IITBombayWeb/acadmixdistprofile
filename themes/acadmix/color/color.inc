@@ -8,8 +8,10 @@
 $info = [
   // Available colors and color labels used in theme.
   'fields' => [
-    'topnav' => t('Header and footer Text background'),
+    'topnav' => t('Header and Footer Text color'),
     'footer' => t('Header and Footer background'),
+    'text' => t('Website Text color'),
+    'link' => t('Link color'),
   ],
   // Pre-defined color schemes.
   'schemes' => [
@@ -18,6 +20,8 @@ $info = [
       'colors' => [
         'topnav' => '#ffffff',
         'footer' => '#444444',
+        'text' => ' #343536',
+        'link' => '#337ab7',
       ],
     ],
   ],
