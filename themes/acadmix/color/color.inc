@@ -24,16 +24,17 @@ $info = [
         'link' => '#337ab7',
       ],
     ],
-  ],
     'orange' => [
-    'title' => t('Orange color'),
-    'colors' => [
-      'topnav' => '#ffffff',
-      'footer' => '#f86a00',
-      'text' => '#343536',
-      'link' => '#a14500',
+      'title' => t('Orange color'),
+      'colors' => [
+        'topnav' => '#ffffff',
+        'footer' => '#f86a00',
+        'text' => '#343536',
+        'link' => '#a14500',
+      ],
     ],
   ],
+ 
 
   // CSS files (excluding @import) to rewrite with new color scheme.
   'css' => [
