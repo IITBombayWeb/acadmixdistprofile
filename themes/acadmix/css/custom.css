@@ -16,6 +16,7 @@
     z-index: 1;
     background-color: #ffffff;
     position: relative;
+    margin-top: 7.2em;
 }
 
 /* top_nav */
@@ -291,10 +292,10 @@ left: 100%;
 /* main slider section */
 
 .slider-wrapper{
-  margin-top: 4em;
+  margin-top: 7.2em;
 }
 .slider-wrapper-admin{
-  margin-top: 4.5em;
+  margin-top: 7.2em;
 }
 
 @media screen and (max-width: 768px){
