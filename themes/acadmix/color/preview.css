@@ -12,16 +12,23 @@
   word-wrap: break-word;
   margin-bottom: 10px;
 }
-.color-preview-header {
+.color-preview-top-head{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
 }
+
+.color-preview-header {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
 .color-preview-logo {
   float: left;
   padding: 15px;
 }
 .color-preview-site-name {
-  color: #686868;
   font-weight: normal;
   font-size: 1.821em;
   line-height: 1;
@@ -38,26 +45,26 @@
   padding: 0 15px 3px;
 }
 .color-preview-main-menu-links a {
-  color: #d9d9d9;
-  padding: 0.6em 1em 0.4em;
+  /*color: #d9d9d9;*/
+  padding: 0.6em 0.65em 0.4em;
+  font-weight: bold;
 }
 .color-preview-main-menu-links {
   font-size: 0.929em;
   margin: 0;
   padding: 0;
 }
-.color-preview-main-menu-links a {
+/*.color-preview-main-menu-links a {
   color: #333;
   background: #ccc;
   background: rgba(255, 255, 255, 0.7);
   text-shadow: 0 1px #eee;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
+}*/
 .color-preview-main-menu-links a:hover,
 .color-preview-main-menu-links a:focus {
-  background: #eee;
-  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 4px solid;
   text-decoration: none;
   cursor: pointer;
 }

@@ -15,10 +15,13 @@
       var $colorPalette = $form.find('.js-color-palette');
 
 
-      $colorPreview.find('.color-preview-header *, .color-preview-footer-wrapper *').css('color', $colorPalette.find('input[name="palette[topnav]"]').val());
-      $colorPreview.find('.color-preview-header, .color-preview-footer-wrapper').css('background-color', $colorPalette.find('input[name="palette[footer]"]').val());
+      $colorPreview.find('.color-preview-top-head *, .color-preview-footer-wrapper *').css('color', $colorPalette.find('input[name="palette[topnav]"]').val());
+      $colorPreview.find('.color-preview-top-head, .color-preview-footer-wrapper').css('background-color', $colorPalette.find('input[name="palette[footer]"]').val());
       $colorPreview.find('.color-preview-main h2, .color-preview .preview-content, .color-preview-content h1, .preview-content ').css('color', $colorPalette.find('input[name="palette[text]"]').val());
-      $colorPreview.find('.color-preview-content a').css('color', $colorPalette.find('input[name="palette[link]"]').val());
+      $colorPreview.find('.color-preview-content a, .color-preview-main-menu-links a, .color-preview-main-menu-links a:hover').css('color', $colorPalette.find('input[name="palette[link]"]').val());
+      $colorPreview.find('.color-preview-site-name').css('color', $colorPalette.find('input[name="palette[footer]"]').val());
+
+
     }
   };
 })(jQuery, Drupal, drupalSettings);
