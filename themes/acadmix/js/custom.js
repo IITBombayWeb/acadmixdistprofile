@@ -10,7 +10,7 @@
   		previousTop = 0,
   		currentTop = 0,
   		scrollDelta = 2,
-  		scrollOffset = 10;
+  		scrollOffset = 20;
 
   	mainHeader.on('click', '.nav-trigger', function(event){
   		// open primary navigation on mobile
