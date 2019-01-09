@@ -106,10 +106,11 @@
               </div>
             </div>
           {% endif %}
-            {% if not navbar_attributes.hasClass(container) %}
-              <div class="{{ container }}">
-            {% endif %}
+         
 
+          {% if not navbar_attributes.hasClass(container) %}
+            <div class="{{ container }}">
+          {% endif %}
 
               <div class="navbar-header col-sm-12 col-md-12">
                 {{ page.header }}
@@ -122,21 +123,21 @@
                   </button>
                 {% endif %}
               </div>
-            {% if page.navigation_collapsible %}
-            <div class="row">
-              <div class="col-sm-3 col-md-3 pull-right">
-                {{ page.header_search }}
-              </div>
-                <div id="primary-menu" class="col-sm-9 col-md-9 navbar-collapse collapse navbar-left">
-                  {{ page.navigation_collapsible }}
+              {% if page.navigation_collapsible %}
+              <div class="row">
+                <div class="col-sm-3 col-md-3 pull-right">
+                  {{ page.header_search }}
                 </div>
-            </div>
-            {% endif %}
-
-
-            {% if not navbar_attributes.hasClass(container) %}
+                  <div id="primary-menu" class="col-sm-9 col-md-9 navbar-collapse collapse navbar-left">
+                    {{ page.navigation_collapsible }}
+                  </div>
               </div>
-            {% endif %}
+              {% endif %}
+
+          {% if not navbar_attributes.hasClass(container) %}
+            </div>
+          {% endif %}
+          
         </header>
      {% endblock %} {#end block navbar #}
   {% endif %} {# end if page.header or..... #}

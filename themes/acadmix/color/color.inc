@@ -8,7 +8,7 @@
 $info = [
   // Available colors and color labels used in theme.
   'fields' => [
-    'topnav' => t('Header and Footer Text color'),
+    'topnavtext' => t('Header and Footer Text color'),
     'footer' => t('Header and Footer background'),
     'text' => t('Default Text color'),
     'link' => t('Link color'),
@@ -18,7 +18,7 @@ $info = [
     'default' => [
       'title' => t('Acadmix (default)'),
       'colors' => [
-        'topnav' => '#ffffff',
+        'topnavtext' => '#ffffff',
         'footer' => '#444444',
         'text' => '#343536',
         'link' => '#337ab7',
@@ -27,7 +27,7 @@ $info = [
     'orange' => [
       'title' => t('Orange color'),
       'colors' => [
-        'topnav' => '#ffffff',
+        'topnavtext' => '#ffffff',
         'footer' => '#f86a00',
         'text' => '#343536',
         'link' => '#a14500',
