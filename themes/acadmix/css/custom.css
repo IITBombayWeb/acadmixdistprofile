@@ -1,15 +1,9 @@
 .demo-block{
   text-align: center;
 }
-.region-content {
-    min-height: 350px;
-  }
 
-.main-container{
-  margin-top: 7em;
-}
-.main-container-admin{
-  margin-top: 7em;
+.main-container, .main-container-admin, .region-slider{
+ padding-bottom: 3em;
 }
 
 #main-content{

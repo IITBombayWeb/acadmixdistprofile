@@ -146,13 +146,13 @@
 
 {# Main #}
   {% block main %}
-    <main id="main-content" class="main-content" role="main" style="margin-bottom: 500px;">
+    <main id="main-content" class="main-content" role="main" style="margin-bottom: 353px;">
       {% if page.slider %}
         {# <div class="{{ slider_wrapper }}"> #}
           {{ page.slider }}
         {# </div> #}
       {% endif %}
-      <div role="main" class="{{ container }} js-quickedit-main-content">
+        <div role="main" class="{{ main_container_class }}{{ container }} js-quickedit-main-content">
 
               {% if page.top1 or page.top2 or page.top3 or page.top4 or page.top_head %}
 
@@ -248,7 +248,7 @@
 
               {% if page.breadcrumb %}
                 <div class="{{ container }}">
-                <div class="row clearfix">
+                  <div class="row clearfix">
                     <div class="col-md-12">
                       {{ page.breadcrumb }}
                     </div>
