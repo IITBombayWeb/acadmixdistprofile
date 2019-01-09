@@ -18,8 +18,12 @@ body {
  color: #151515;
 } 
 
-a {
+a, a.views-more-link {
   color: #337ab7;
+}
+
+a:hover, .news-card .lst_news_item a:hover  {
+	color: #337ab7;
 }
 
 .region-navigation-collapsible li.active a, .region-navigation-collapsible li a.is-active {
@@ -37,10 +41,11 @@ a {
    border-bottom-color: #337ab7;
 }
 #back-to-top{
+    background-color: #444444;
+}
+
+
+.btn-primary {
     background-color: #337ab7;
+    border-color: #337ab7;
 }
-
-a:hover {
-	color: #337ab7;
-}
-
