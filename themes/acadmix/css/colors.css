@@ -19,7 +19,7 @@ body {
 } 
 
 a, a.views-more-link {
-  color: #337ab7;
+  color: #337ab7!important;
 }
 
 a:hover, .news-card .lst_news_item a:hover  {
