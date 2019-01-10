@@ -50,16 +50,16 @@
   	    	//if scrolling up...
   	    	topHeader.removeClass('topnav-is-hidden');
           mainHeader.removeClass('navbar-is-shrink').addClass('navbar-default');
-          $('.navbar-is-shrink #nav-wrap').removeClass('nav-wrap-hidden');
-          $('.navbar-is-shrink a.logo2').removeClass('hidden');
+          $('.navbar #nav-wrap').removeClass('nav-wrap-hidden');
+          $('.navbar-header a.logo2').removeClass('hidden');
 
   	    } 
         else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
   	    	//if scrolling down...
   	    	topHeader.addClass('topnav-is-hidden');
           mainHeader.addClass('navbar-is-shrink').removeClass('navbar-default');
-          $('.navbar-is-shrink #nav-wrap').addClass('nav-wrap-hidden');
-          $('.navbar-is-shrink a.logo2').addClass('hidden');
+          $('.navbar #nav-wrap').addClass('nav-wrap-hidden');
+          $('.navbar-header a.logo2').addClass('hidden');
 
 		    }
 		  // }
