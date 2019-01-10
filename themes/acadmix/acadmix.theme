@@ -32,7 +32,7 @@ function acadmix_preprocess_page(&$variables) {
 
   $variables['show_heading_branding'] = theme_get_setting('show_heading_branding');
   $variables['heading_branding_text'] = theme_get_setting('heading_branding_text');
-  $variables['heading_branding_url'] = theme_get_setting('heading_branding_text');
+  $variables['heading_branding_url'] = theme_get_setting('heading_branding_url');
 
   //To get the current URL
   $current_url  = \Drupal::request()->getRequestUri();
