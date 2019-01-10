@@ -76,7 +76,7 @@
  /* opacity: 0;*/
 }
 
-.navbar-is-hidden{
+.navbar-is-shrink{
  -webkit-transform: translateY(-23%);
     -ms-transform: translateY(-23%);
         transform: translateY(-23%);
@@ -115,7 +115,7 @@ a.logo{
     /* width: 10em; */
     /* text-align: initial; */
     font-weight: 400;
-    color: #666!important;
+   /* color: #666!important;*/
     font-size: 1.3em;
     /*font-size: 15pt;*/
     /* line-height: 1.1; */
