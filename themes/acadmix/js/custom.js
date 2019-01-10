@@ -49,13 +49,13 @@
   	    if (previousTop - currentTop > scrollDelta) {
   	    	//if scrolling up...
   	    	topHeader.removeClass('topnav-is-hidden');
-          mainHeader.removeClass('navbar-is-shrink');
+          mainHeader.removeClass('navbar-is-shrink navbar-default');
           
   	    } 
         else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
   	    	//if scrolling down...
   	    	topHeader.addClass('topnav-is-hidden');
-          mainHeader.addClass('navbar-is-shrink');
+          mainHeader.addClass('navbar-is-shrink navbar-default');
 		    }
 		  // }
   	}
