@@ -50,7 +50,7 @@
   	    	//if scrolling up...
   	    	topHeader.removeClass('topnav-is-hidden');
           mainHeader.removeClass('navbar-is-shrink').addClass('navbar-default');
-          $('.navbar-is-shrink #nav-wrap, navbar-is-shrink a.logo2').removeClass('nav-wrap-hidden');
+          $('.navbar-is-shrink #nav-wrap').removeClass('nav-wrap-hidden');
           $('.navbar-is-shrink a.logo2').removeClass('hidden');
 
   	    } 

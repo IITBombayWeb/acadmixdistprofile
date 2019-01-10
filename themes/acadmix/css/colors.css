@@ -1,6 +1,10 @@
 
 .section-footer *, .top-nav *, .navbar-is-shrink .navbar-brand, .navbar-is-shrink .navbar-text, .navbar-is-shrink a {
 	color: #ffffff!important;
+    -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .section-footer a:hover, .top-nav a:hover, .navbar-is-shrink a:hover {
@@ -9,6 +13,10 @@
 
 .section-footer, .top-nav, .navbar-is-shrink {
 	background-color: #444444;
+    -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .navbar-default .navbar-brand {
