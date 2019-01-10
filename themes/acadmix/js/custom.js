@@ -44,20 +44,20 @@
   	}
 
   	function checkSimpleNavigation(currentTop) {
-		if ( $(window).width() > 767 ){
+		// if ( $(window).width() > 767 ){
   		//there's no secondary nav or secondary nav is below primary nav
   	    if (previousTop - currentTop > scrollDelta) {
   	    	//if scrolling up...
   	    	topHeader.removeClass('topnav-is-hidden');
-          mainHeader.removeClass('navbar-is-hidden');
+          mainHeader.removeClass('navbar-is-shrink');
           
   	    } 
         else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
   	    	//if scrolling down...
   	    	topHeader.addClass('topnav-is-hidden');
-          mainHeader.addClass('navbar-is-hidden');
+          mainHeader.addClass('navbar-is-shrink');
 		    }
-		  }
+		  // }
   	}
 
     $('#back-to-top').on('click', function(){

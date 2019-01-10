@@ -1,12 +1,13 @@
 
-.section-footer *, .top-nav *{
+.section-footer *, .top-nav *, .navbar-is-shrink .navbar-brand, .navbar-is-shrink .navbar-text {
 	color: #ffffff;
 }
 
-.section-footer a:hover, .top-nav a:hover{
+.section-footer a:hover, .top-nav a:hover, .navbar-is-shrink .navbar-brand:hover {
 	color: #ffffff;
 }
-.section-footer, .top-nav {
+
+.section-footer, .top-nav, .navbar-is-shrink {
 	background-color: #444444;
 }
 
@@ -28,10 +29,6 @@ a:hover, .news-card .lst_news_item a:hover{
 
 a.views-more-link {
   color: #337ab7!important;
-}
-
-div#back-to-top:hover {
-	background-color: #337ab7;
 }
 
 h2.page-header {
