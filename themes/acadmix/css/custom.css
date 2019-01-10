@@ -548,7 +548,7 @@ left: 100%;
   	text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
   	border-radius:3px;
-  	color: #FFF;
+  	color: #ffffff;
   	z-index: 9999;
     cursor: pointer;
     transition: background 0.5s;
@@ -556,15 +556,12 @@ left: 100%;
     -webkit-transition: background 0.5s;
 }
 
-#back-to-top:after {\
+#back-to-top:after {
   content: "\f106";
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
 }
 
-#back-to-top:hover{
-
-}
 
 
 
