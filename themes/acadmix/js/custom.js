@@ -56,6 +56,7 @@
   	    	//if scrolling down...
   	    	topHeader.addClass('topnav-is-hidden');
           mainHeader.addClass('navbar-is-shrink').removeClass('navbar-default');
+          $('.navbar-is-shrink #nav-wrap').addClass('nav-wrap-hidden');
 		    }
 		  // }
   	}

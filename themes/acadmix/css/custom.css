@@ -82,7 +82,7 @@
         transform: translateY(-23%);
 }
 
-.navbar-is-shrink nav{
+.navbar-is-shrink .nav-wrap-hide{
   display: none;
 }
 
