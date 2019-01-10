@@ -22,7 +22,7 @@ a {
   color: #337ab7;
 }
 
-a:hover{
+a:hover, .news-card .lst_news_item a:hover{
    color: #337ab7;
 }
 
@@ -30,7 +30,7 @@ a.views-more-link {
   color: #337ab7!important;
 }
 
-.news-card .lst_news_item a:hover, #back-to-top:hover {
+div#back-to-top:hover {
 	background-color: #337ab7;
 }
 
