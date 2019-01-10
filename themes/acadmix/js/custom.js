@@ -1,5 +1,6 @@
 !function($) {
   var mainHeader = $('#navbar'),
+      topHeader = $('.top-nav'),
   		secondaryNavigation = $('.cd-secondary-nav'),
   		//this applies only if secondary nav is below intro section
   		belowNavHeroContent = $('.sub-nav-hero'),
@@ -47,12 +48,16 @@
   		//there's no secondary nav or secondary nav is below primary nav
   	    if (previousTop - currentTop > scrollDelta) {
   	    	//if scrolling up...
-  	    	mainHeader.removeClass('is-hidden');
-  	    } else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
+  	    	topHeader.removeClass('topnav-is-hidden');
+          mainHeader.removeClass('navbar-is-hidden');
+          
+  	    } 
+        else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
   	    	//if scrolling down...
-  	    	mainHeader.addClass('is-hidden');
+  	    	topHeader.addClass('topnav-is-hidden');
+          mainHeader.addClass('navbar-is-hidden');
+		    }
 		  }
-		}
   	}
 
     $('#back-to-top').on('click', function(){
