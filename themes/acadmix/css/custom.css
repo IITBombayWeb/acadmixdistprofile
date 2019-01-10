@@ -106,9 +106,9 @@
   margin-top: 10px;
 }
 
-.font-shrink{
+.font-shrink .navbar-brand{
   padding-top: 1em;
-  font-size: 20px;
+  font-size: 1.7em;
 }
 .navbar-brand {
   height: auto;
