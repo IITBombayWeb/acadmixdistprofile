@@ -22,11 +22,15 @@ a {
   color: #337ab7;
 }
 
+a:hover{
+   color: #337ab7;
+}
+
 a.views-more-link {
   color: #337ab7!important;
 }
 
-a:hover, .news-card .lst_news_item a:hover, #back-to-top:hover {
+.news-card .lst_news_item a:hover, #back-to-top:hover {
 	background-color: #337ab7;
 }
 
