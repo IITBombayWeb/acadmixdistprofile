@@ -52,6 +52,7 @@
           mainHeader.removeClass('navbar-is-shrink').addClass('navbar-default');
           $('.navbar #nav-wrap').removeClass('nav-wrap-hidden');
           $('.navbar-header a.logo2').removeClass('hidden');
+          $('.navbar-header #font-shrink').removeClass('font-shrink');
 
   	    } 
         else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
@@ -60,6 +61,7 @@
           mainHeader.addClass('navbar-is-shrink').removeClass('navbar-default');
           $('.navbar #nav-wrap').addClass('nav-wrap-hidden');
           $('.navbar-header a.logo2').addClass('hidden');
+          $('.navbar-header #font-shrink').addClass('font-shrink');
 
 		    }
 		  // }

@@ -98,6 +98,18 @@
   transition: all 0.5s;
 }
 
+.navbar-is-shrink .font-shrink{
+  font-size: 0.75rem;
+}
+
+.font-shrink .navbar-text{
+  margin-top: 10px;
+}
+
+.font-shrink{
+  padding-top: 1em;
+  font-size: 20px;
+}
 .navbar-brand {
   height: auto;
   padding-top: 0.9em ;
