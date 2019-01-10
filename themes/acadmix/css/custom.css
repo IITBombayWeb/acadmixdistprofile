@@ -111,7 +111,7 @@ transition: all 0.5s;
 }
 
 a.navbar-brand:hover{
-  color: #666!important;
+  /*color: #666!important;*/
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
