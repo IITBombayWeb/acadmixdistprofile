@@ -27,7 +27,7 @@ a.views-more-link {
 }
 
 a:hover, .news-card .lst_news_item a:hover, #back-to-top:hover {
-	color: #337ab7;
+	background-color: #337ab7;
 }
 
 h2.page-header {
