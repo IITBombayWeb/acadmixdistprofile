@@ -82,6 +82,10 @@
         transform: translateY(-23%);
 }
 
+.navbar-is-shrink nav{
+  display: none;
+}
+
 .navbar-brand {
   height: auto;
   padding-top: 0.9em ;
