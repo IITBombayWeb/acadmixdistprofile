@@ -1,9 +1,9 @@
 
-.section-footer *, .top-nav *, .navbar-is-shrink .navbar-brand, .navbar-is-shrink .navbar-text {
+.section-footer *, .top-nav *, .navbar-is-shrink .navbar-brand, .navbar-is-shrink .navbar-text, .navbar-is-shrink a {
 	color: #ffffff;
 }
 
-.section-footer a:hover, .top-nav a:hover, .navbar-is-shrink .navbar-brand:hover {
+.section-footer a:hover, .top-nav a:hover, .navbar-is-shrink a:hover {
 	color: #ffffff;
 }
 
