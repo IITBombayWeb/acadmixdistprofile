@@ -22,6 +22,10 @@
     -moz-box-shadow: 1px 1px 8px #b1b1b1;
     -webkit-box-shadow: 1px 1px 8px #b1b1b1;
     box-shadow: 1px 1px 8px #b1b1b1;
+      -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+     -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 .top-nav-brand{
     font-size: 1.1em;
@@ -65,11 +69,17 @@
   .navbar-fixed-top{
     z-index: 10;
   }
-#navbar.is-hidden {
+/*#navbar*/.topnav-is-hidden {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
  /* opacity: 0;*/
+}
+
+.navbar-is-hidden{
+ -webkit-transform: translateY(-23%);
+    -ms-transform: translateY(-23%);
+        transform: translateY(-23%);
 }
 
 .navbar-brand {
