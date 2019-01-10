@@ -82,7 +82,11 @@
         transform: translateY(-23%);
 }
 
-.navbar-is-shrink .nav-wrap-hide{
+.navbar-is-shrink .nav-wrap-hidden{
+  display: none;
+}
+
+.hidden{
   display: none;
 }
 
