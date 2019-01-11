@@ -85,7 +85,7 @@
   -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-@media screen and (max-width: 767px){
+@media screen and (min-width: 767px){
   .navbar-is-shrink .nav-wrap-hidden
   {
     display: none;
