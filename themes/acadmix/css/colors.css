@@ -11,7 +11,15 @@
 	color: #ffffff!important;
 }
 
-.section-footer, .top-nav, .navbar-is-shrink {
+.profile-nav > li.active > a, .profile-nav > li.active > a:hover, .profile-nav > li.active > a:focus{
+  color: #ffffff;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.section-footer, .top-nav, .navbar-is-shrink, .profile-nav > li.active > a, .profile-nav  > li.active > a:hover, .profile-nav  > li.active > a:focus {
 	background-color: #444444;
     -webkit-transition: all 0.5s;
      -moz-transition: all 0.5s;
@@ -62,3 +70,5 @@ h2.page-header {
     background-color: #337ab7!important;
     border-color: #337ab7!important;
 }
+
+
