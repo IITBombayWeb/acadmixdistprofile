@@ -174,10 +174,10 @@ a.logo img{
     /* margin: 0.8em 0; */
     margin-left: 0;
     font-family: 'Oswald', 'Lucida Sans Unicode','Lucida Grande',sans-serif;
-      -webkit-transition: all 0.5s;
+ /*     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
-    transition: all 0.5s;
+    transition: all 0.5s;*/
 }
 .navbar-toggle {
   background: #afafaf;
