@@ -122,6 +122,7 @@
                 </div>
                 <div class="col-md-1 col-sm-1 col-xs-1">
                 </div>
+              </div>
 
                  
                   {% if page.navigation_collapsible %}
@@ -136,14 +137,14 @@
               </div>
 
               {% if page.navigation_collapsible %}
-                <div class="row" id="nav-wrap">
-                  <div id="primary-menu" class="col-sm-9 col-md-9 navbar-collapse collapse navbar-left">
-                    {{ page.navigation_collapsible }}
+                  <div class="row" id="nav-wrap">
+                    <div id="primary-menu" class="col-sm-9 col-md-9 navbar-collapse collapse navbar-left">
+                      {{ page.navigation_collapsible }}
+                    </div>
+                    <div class="col-sm-3 col-md-3 pull-right">
+                      {{ page.header_search }}
+                    </div>
                   </div>
-                  <div class="col-sm-3 col-md-3 pull-right">
-                    {{ page.header_search }}
-                  </div>
-                </div>
               {% endif %}
 
           {% if not navbar_attributes.hasClass(container) %}
