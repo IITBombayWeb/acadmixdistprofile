@@ -16,7 +16,7 @@
 /* top_nav */
 
 .top-nav{
-    padding: 15px;
+    padding: 5px;
     font-size: 1.1rem;
     position: relative;
     -moz-box-shadow: 1px 1px 8px #b1b1b1;
@@ -77,9 +77,9 @@
 }
 
 .navbar-is-shrink{
- -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+ -webkit-transform: translateY(-43%);
+    -ms-transform: translateY(-43%);
+        transform: translateY(-43%);
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -154,7 +154,7 @@ a.logo{
   width: 5em;
 }
 
-a.logo{
+.font-shrink a.logo{
   background-color: #f8f8f8;
   padding: 0;
   margin-right: 15px;
