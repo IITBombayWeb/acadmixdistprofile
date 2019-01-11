@@ -121,16 +121,16 @@
                   </button>
                 {% endif %}
               </div>
-              
+
               {% if page.navigation_collapsible %}
-              <div class="row" id="nav-wrap">
-                <div class="col-sm-3 col-md-3 pull-right">
-                  {{ page.header_search }}
-                </div>
+                <div class="row" id="nav-wrap">
                   <div id="primary-menu" class="col-sm-9 col-md-9 navbar-collapse collapse navbar-left">
                     {{ page.navigation_collapsible }}
                   </div>
-              </div>
+                  <div class="col-sm-3 col-md-3 pull-right">
+                    {{ page.header_search }}
+                  </div>
+                </div>
               {% endif %}
 
           {% if not navbar_attributes.hasClass(container) %}
