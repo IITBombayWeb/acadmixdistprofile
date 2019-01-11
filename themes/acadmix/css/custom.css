@@ -490,9 +490,9 @@ left: 100%;
 }
 
 
-.profile-nav > li.active > a, .profile-nav  > li.active > a:hover, .profile-nav  > li.active > a:focus {
+/*.profile-nav > li.active > a, .profile-nav  > li.active > a:hover, .profile-nav  > li.active > a:focus {
     background-color: #7cc576;
-}
+}*/
 
 .ol-timeline {
     list-style: disc;

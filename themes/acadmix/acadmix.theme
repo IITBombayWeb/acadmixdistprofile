@@ -21,6 +21,12 @@ use Drupal\Core\Config\ConfigFactoryInterface;
  * Implements hook_preprocess_page() for block templates.
  */
 
+global  $theme_name, $path_to_acadmix;
+$theme_name = \Drupal::theme()->getActiveTheme()->getName();
+$path_to_acadmix = drupal_get_path('theme', 'acadmix');
+
+
+
 function acadmix_preprocess_page(&$variables) {
   global $base_path;
   $variables['logo2'] = $base_path.'/' . drupal_get_path('theme','acadmix') . '/logo2.png';
@@ -132,4 +138,58 @@ function acadmix_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
       $form['acadmix_info'] = array(
         '#markup' => '<div class="messages messages--warning">Clear cache after making any changes in theme settings. <a href="../../config/development/performance">Click here to clear cache</a></div>'
       );
+
+     $form['acadmix_settings']['adv_page_header'] = array(
+        '#type' => 'details',
+        '#title' => t('Advanced Page header settings'),
+        '#collapsible' => TRUE,
+        '#collapsed' => TRUE,
+      );
+
+    $form['acadmix_settings']['adv_page_header']['faculty_header_bg']  = array(
+        '#type' => 'details',
+        '#title' => t('Faculty page header Background image'),
+        '#description' => t('<p>please upload or enter the url of header background image</p>'),
+        '#collapsible' => TRUE,
+        '#collapsed' => TRUE,
+    );
+
+
+    $form['acadmix_settings']['adv_page_header']['faculty_header_bg']['header_bg_file'] = array(
+        '#type' => 'textfield',
+        '#title' => t('URL of the header background image'),
+        '#default_value' => theme_get_setting('faculty_header_bg_file'),
+        '#description' => t('Enter a URL of the form (/sites/default/files/your-background.jpg). If the background image is bigger than the header area, it is clipped. If it\'s smaller than the header area, it is tiled to fill the header area. To remove the background image, blank this field and save the settings.'),
+        '#size' => 40,
+        '#maxlength' => 120,
+    );
+
+    $form['acadmix_settings']['adv_page_header']['faculty_header_bg']['header_bg'] = array(
+      '#type' => 'file',
+      '#title' => t('Upload faculty page header background image'),
+      '#size' => 40,
+      '#attributes' => array('enctype' => 'multipart/form-data'),
+      '#description' => t('If you don\'t have direct access to the server, use this field to upload your header background image. Uploads limited to .png .gif .jpg .jpeg .apng .svg extensions'),
+      '#element_validate' => array('acadmix_header_bg_validate'),
+    );
+  
   }
+
+function acadmix_header_bg_validate($element, FormStateInterface $form_state) {
+  global $base_url;
+
+  $validators = array('file_validate_extensions' => array('png gif jpg jpeg apng svg'));
+  $file = file_save_upload('header_bg', $validators, "public://", NULL, FILE_EXISTS_REPLACE);
+
+  if (!empty($file)) {
+    // change file's status from temporary to permanent and update file database
+    if ((is_object($file[0]) == 1)) {
+      $file[0]->status = FILE_STATUS_PERMANENT;
+      $file[0]->save();
+      $uri = $file[0]->getFileUri();
+      $file_url = file_create_url($uri);
+      $file_url = str_ireplace($base_url, '', $file_url);
+      $form_state->setValue('header_bg_file', $file_url);
+    }
+ }
+}
