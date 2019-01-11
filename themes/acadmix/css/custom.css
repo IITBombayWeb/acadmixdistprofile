@@ -80,19 +80,19 @@
  -webkit-transform: translateY(-35%);
     -ms-transform: translateY(-35%);
         transform: translateY(-35%);
-/*  -webkit-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
-    transition: all 0.5s;*/
+    transition: all 0.5s;
 }
 @media screen and (min-width: 767px){
   .navbar-is-shrink .nav-wrap-hidden
   {
     display: none;
-/*    -webkit-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
      -moz-transition: all 0.5s;
      -o-transition: all 0.5s;
-    transition: all 0.5s;*/
+    transition: all 0.5s;
   }
 }
 
