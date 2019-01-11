@@ -113,7 +113,7 @@
 }
 
 .font-shrink .navbar-text{
-  margin-top: 10px;
+  margin-top: 0.4em;
 /*  -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -123,6 +123,7 @@
 .font-shrink .navbar-brand{
   padding-top: 1em;
   font-size: 1.7em;
+  font-weight: normal;
 /*  -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -153,9 +154,12 @@ a.logo{
   width: 5em;
 }
 
-a.logo img{
+a.logo{
   background-color: #f8f8f8;
-  padding: 2px;
+  padding: 0;
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .sec-logo{
