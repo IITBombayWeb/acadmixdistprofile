@@ -110,21 +110,18 @@
             <div class="{{ container }}">
           {% endif %}
               <div class="row">
-                <div class="navbar-header col-md-11 col-sm-11 col-xs-12">
-                  <div class="row">
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                      {{ page.header }} 
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12 hidden" id="search-shrink">
-                      {{ page.header_search }}
+                  <div class="navbar-header col-md-11 col-sm-11 col-xs-12">
+                    <div class="row">
+                      <div class="col-md-8 col-sm-8 col-xs-12">
+                        {{ page.header }} 
+                      </div>
+                      <div class="col-md-3 col-sm-3 col-xs-12 hidden" id="search-shrink">
+                        {{ page.header_search }}
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-1 col-sm-1 col-xs-1">
-                </div>
-              </div>
-
-                 
+                  <div class="col-md-1 col-sm-1 col-xs-1">
+                 </div>
                   {% if page.navigation_collapsible %}
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
                       <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
@@ -133,7 +130,6 @@
                       <span class="icon-bar"></span>
                     </button>
                   {% endif %}
-                </div>
               </div>
 
               {% if page.navigation_collapsible %}
