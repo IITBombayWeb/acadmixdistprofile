@@ -77,61 +77,85 @@
 }
 
 .navbar-is-shrink{
- -webkit-transform: translateY(-23%);
-    -ms-transform: translateY(-23%);
-        transform: translateY(-23%);
+ -webkit-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+        transform: translateY(-35%);
+          -webkit-transition: all 0.5s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
-
-.navbar-is-shrink .nav-wrap-hidden{
-  display: none;
-  -webkit-transition: all 0.5s;
-   -moz-transition: all 0.5s;
-   -o-transition: all 0.5s;
-  transition: all 0.5s;
+@media screen and (max-width: 767px){
+  .navbar-is-shrink .nav-wrap-hidden
+  {
+    display: none;
+    -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+     -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
 }
 
 .hidden{
   display: none;
-  -webkit-transition: all 0.5s;
-   -moz-transition: all 0.5s;
-   -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navbar-is-shrink .font-shrink{
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .font-shrink .navbar-text{
   margin-top: 10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .font-shrink .navbar-brand{
   padding-top: 1em;
   font-size: 1.7em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
+
 .navbar-brand {
   height: auto;
   padding-top: 0.9em ;
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Oswald', 'Lucida Sans Unicode','Lucida Grande',sans-serif;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+transition: all 0.3s;
 }
 
 a.navbar-brand:hover{
   /*color: #666!important;*/
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+transition: all 0.3s;
 }
 
 a.logo{
   width: 5em;
+}
+
+a.logo img{
+  background-color: #f8f8f8;
+  padding: 2px;
 }
 
 .sec-logo{
@@ -153,6 +177,9 @@ a.logo{
 }
 .navbar-toggle {
   background: #afafaf;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
 }
 
 .toggle-search{
