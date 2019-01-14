@@ -45,6 +45,15 @@ function acadmix_preprocess_ds_1col(&$variables){
   if ($event_header_bg_file) {
     $variables['event_header_style'] .= 'background: url(' . $event_header_bg_file . '); background-size: cover;';
   }
+
+
+    $variables['news_header_style'] = '';
+  $event_header_bg_file =  $base_path.'/' . theme_get_setting('news_header_bg_file', $theme_name);
+  
+  if ($event_header_bg_file) {
+    $variables['news_header_style'] .= 'background: url(' . $news_header_bg_file . '); background-size: cover;';
+  }
+ 
  
 }
 
