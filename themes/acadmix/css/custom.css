@@ -85,9 +85,9 @@
 }
 
 .navbar-is-shrink{
- -webkit-transform: translateY(-55%);
-    -ms-transform: translateY(-55%);
-        transform: translateY(-55%);
+ -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -116,7 +116,7 @@
 }
 
 .navbar-is-shrink .font-shrink{
-  font-size: 0.65rem;
+  font-size: 0.68rem;
 /*  -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -219,7 +219,7 @@ a.logo{
 }
 
 #search-block-form{
-    margin-top: 0.5rem;
+    margin-top: 0.45em;
     float: right;
 }
 
