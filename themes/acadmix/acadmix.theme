@@ -170,7 +170,7 @@ function acadmix_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
       '#size' => 40,
       '#attributes' => array('enctype' => 'multipart/form-data'),
       '#description' => t('If you don\'t have direct access to the server, use this field to upload your header background image. Uploads limited to .png .gif .jpg .jpeg .apng .svg extensions'),
-      '#element_validate' => array('acadmix_header_bg_validate'),
+      '#element_validate' => array('faculty_header_bg_validate'),
     );
 
 
@@ -199,7 +199,7 @@ function acadmix_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
       '#size' => 40,
       '#attributes' => array('enctype' => 'multipart/form-data'),
       '#description' => t('If you don\'t have direct access to the server, use this field to upload your header background image. Uploads limited to .png .gif .jpg .jpeg .apng .svg extensions'),
-      '#element_validate' => array('acadmix_header_bg_validate'),
+      '#element_validate' => array('faculty_header_bg_validate'),
     );
   
   }
