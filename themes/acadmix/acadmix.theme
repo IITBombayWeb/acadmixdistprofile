@@ -49,7 +49,7 @@ function acadmix_preprocess_ds_1col(&$variables){
 }
 
 
-      // $variables['logo2'] = $base_path.'/' . drupal_get_path('theme','acadmix') . '/logo2.png';
+
 
 
 function acadmix_preprocess_page(&$variables) {
@@ -208,7 +208,7 @@ function acadmix_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
     $form['acadmix_settings']['event_header_bg']['event_header_bg_file'] = array(
         '#type' => 'textfield',
         '#title' => t('URL of the Event header background image file'),
-        '#default_value' => theme_get_setting('enent_header_bg_file'),
+        '#default_value' => theme_get_setting('event_header_bg_file'),
         '#description' => t('Enter a URL of the form (/sites/default/files/your-background.jpg). If the background image is bigger than the header area, it is clipped. If it\'s smaller than the header area, it is tiled to fill the header area. To remove the background image, blank this field and save the settings.'),
         '#size' => 40,
         '#maxlength' => 120,
@@ -223,6 +223,33 @@ function acadmix_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\Form
       '#element_validate' => array('event_header_bg_validate'),
     );
   
+
+      $form['acadmix_settings']['news_header_bg']  = array(
+        '#type' => 'details',
+        '#title' => t('news page header Background image'),
+        '#description' => t('<p>please upload or enter the url of header background image</p>'),
+        '#collapsible' => TRUE,
+        '#collapsed' => TRUE,
+    );
+
+
+    $form['acadmix_settings']['news_header_bg']['news_header_bg_file'] = array(
+        '#type' => 'textfield',
+        '#title' => t('URL of the header background image'),
+        '#default_value' => theme_get_setting('news_header_bg_file'),
+        '#description' => t('Enter a URL of the form (/sites/default/files/your-background.jpg). If the background image is bigger than the header area, it is clipped. If it\'s smaller than the header area, it is tiled to fill the header area. To remove the background image, blank this field and save the settings.'),
+        '#size' => 40,
+        '#maxlength' => 120,
+    );
+
+    $form['acadmix_settings']['news_header_bg']['news_header_bg'] = array(
+      '#type' => 'file',
+      '#title' => t('Upload news page header background image'),
+      '#size' => 40,
+      '#attributes' => array('enctype' => 'multipart/form-data'),
+      '#description' => t('If you don\'t have direct access to the server, use this field to upload your header background image. Uploads limited to .png .gif .jpg .jpeg .apng .svg extensions'),
+      '#element_validate' => array('news_header_bg_validate'),
+    );
   }
 
 function faculty_header_bg_validate($element, FormStateInterface $form_state) {
@@ -264,3 +291,21 @@ function event_header_bg_validate($element, FormStateInterface $form_state) {
  }
 }
 
+function news_header_bg_validate($element, FormStateInterface $form_state) {
+  global $base_url;
+
+  $validators = array('file_validate_extensions' => array('png gif jpg jpeg apng svg'));
+  $file = file_save_upload('news_header_bg', $validators, "public://", NULL, FILE_EXISTS_REPLACE);
+
+  if (!empty($file)) {
+    // change file's status from temporary to permanent and update file database
+    if ((is_object($file[0]) == 1)) {
+      $file[0]->status = FILE_STATUS_PERMANENT;
+      $file[0]->save();
+      $uri = $file[0]->getFileUri();
+      $file_url = file_create_url($uri);
+      $file_url = str_ireplace($base_url, '', $file_url);
+      $form_state->setValue('news_header_bg_file', $file_url);
+    }
+ }
+}
