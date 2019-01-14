@@ -53,7 +53,7 @@
     width: 26px;
 }
 
-@media (min-width: 767px){
+@media screen and (min-width: 767px){
 .social-media {
     padding: 0px 0;
     text-align: right;
@@ -66,6 +66,14 @@
      -o-transition: all 0.5s;
     transition: all 0.5s;
   }
+
+  .navbar-default{
+    -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+     -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
   .navbar-fixed-top{
     z-index: 10;
   }
@@ -130,6 +138,13 @@
     transition: all 0.5s;*/
 }
 
+#font-shrink{
+   -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
 .navbar-brand {
   height: auto;
   padding-top: 0.9em ;
@@ -142,12 +157,10 @@
 transition: all 0.5s;*/
 }
 
-a.navbar-brand:hover{
-  /*color: #666!important;*/
-/*  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-transition: all 0.5s;*/
+@media screen and (max-width: 767px){
+  #search-shrink{
+    display: none;
+  }
 }
 
 a.logo{
@@ -184,10 +197,10 @@ a.logo{
     transition: all 0.5s;*/
 }
 .navbar-toggle {
-  background: #afafaf;
+  background-color: #afafaf;
 }
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
+.navbar-toggle .icon-bar {
+    background-color: #888!important;
 }
 
 .toggle-search{
@@ -490,9 +503,6 @@ left: 100%;
 }
 
 
-/*.profile-nav > li.active > a, .profile-nav  > li.active > a:hover, .profile-nav  > li.active > a:focus {
-    background-color: #7cc576;
-}*/
 
 .ol-timeline {
     list-style: disc;
