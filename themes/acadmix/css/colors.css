@@ -23,10 +23,10 @@
 
 .navbar-is-shrink{
   background-color: #444444;
-     -webkit-transition: all 0.5s;
-   -moz-transition: all 0.5s;
-   -o-transition: all 0.5s;
-  transition: all 0.5s;
+     -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 
