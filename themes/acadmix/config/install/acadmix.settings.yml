@@ -68,4 +68,5 @@ linkedin_url: 'https://www.linkedin.com/edu/school?id=13496&trk=edu-cp-title'
 show_heading_branding: 1
 heading_branding_text: 'Indian Institute of Technology Bombay'
 heading_branding_url: 'http://www.iitb.ac.in/'
-header_bg_file:
+faculty_header_bg_file:
+event_header_bg_file:
