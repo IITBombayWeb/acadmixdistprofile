@@ -64,6 +64,14 @@ h2.page-header {
 	color: #343536;
 }
 
+.pagination > li > a, .pagination > li > span{
+  color: #337ab7!important;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #337ab7!important;
+}
+
 .region-navigation-collapsible li.active a, .region-navigation-collapsible li a.is-active {
   border-bottom-color: #337ab7;
 }
