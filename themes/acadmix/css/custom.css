@@ -491,6 +491,10 @@ left: 100%;
 
 /* node */
 
+
+ol.breadcrumb > li:not(:last-child):after{
+  border-right: 1px solid rgba(153, 151, 151, 0.75);
+}
   .sabbi-page-header.page-header-lg {
     min-height: 265px;
     /* width: 100vw;
