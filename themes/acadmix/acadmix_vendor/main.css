@@ -140,6 +140,28 @@ img.grayscale:hover {
 .img-bit-round {
   border-radius: 6px; }
 
+
+/* display properties */
+.grid-inline{
+  display: inline-grid;
+}
+
+.block-inline{
+  display: inline-block;
+}
+
+.flex-inline{
+  display: inline-flex;
+}
+
+.table-inline{
+  display: inline-table;
+}
+.inline{
+  display: inline;
+}
+
+
 /* text */
 .text-right {
   text-align: right; }
@@ -160,8 +182,6 @@ img.grayscale:hover {
   top: 65px;
   margin-top: -65px; }
 
-.stage_image {
-  background-image: url(http://lorempixel.com/people/1200/1000); }
 
 .stage_color {
   background-color: #257ab8; }
