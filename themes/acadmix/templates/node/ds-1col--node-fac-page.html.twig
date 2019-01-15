@@ -31,12 +31,13 @@
 	                	<p class="__adtext">{{ ds_content.field_room_no.0 }}, {{ ds_content.field_building_new.0 }}</p>
 	                </div>
 	            {% endif %}
-
+	            {% if ds_content.field_phone_no_new or ds_content.field_email_new %}
 	            	<footer class="contact-info">
 	                	<h4 class="entry-title">Contact Information</h4>
-	                    <p class="__ci_num"><span>{{ ds_content.field_phone_no_new }}</span></p>
-	                    <p class="__ci_num"> <span>{{ ds_content.field_email_new }}</span></p>
+	                    <p class="__ci_num inline"><span>{{ ds_content.field_phone_no_new }}</span></p>
+	                    <p class="__ci_num inline"> <span>{{ ds_content.field_email_new }}</span></p>
 	              </footer>
+	            {% endif %}
 	       		</div>
 					{{ ds_content.field_google_scholar_id }}
 					{{ ds_content.field_scopus_id }}
