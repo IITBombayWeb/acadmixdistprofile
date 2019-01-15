@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.contextual-region .contextual .contextual-links a{
+  color: #333!important;
+}
+.contextual-region .contextual .contextual-links a:hover{
+  color: #333!important;
+}
 .main-container, .main-container-admin, .region-slider{
  padding-bottom: 3em;
 }
@@ -12,6 +18,8 @@
     position: relative;
     margin-top: 7.2em;
 }
+
+
 
 /* top_nav */
 
@@ -492,9 +500,10 @@ left: 100%;
 /* node */
 
 
-ol.breadcrumb li:not(:last-child):after{
+ol.breadcrumb li{
   border-right: 1px solid rgba(153, 151, 151, 0.75);
 }
+
   .sabbi-page-header.page-header-lg {
     min-height: 265px;
     /* width: 100vw;
