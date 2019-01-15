@@ -492,7 +492,7 @@ left: 100%;
 /* node */
 
 
-ol.breadcrumb > li:not(:last-child):after{
+ol.breadcrumb li:not(:last-child):after{
   border-right: 1px solid rgba(153, 151, 151, 0.75);
 }
   .sabbi-page-header.page-header-lg {
@@ -533,7 +533,7 @@ ol.breadcrumb > li:not(:last-child):after{
 
 .ol-timeline {
     list-style: disc;
-    margin-top: 8em;
+    margin-top: 5em;
     padding-left: 6em;
     position: relative;
 }
