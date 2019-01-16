@@ -83,7 +83,7 @@ h2.page-header {
 .menu-base-theme li a:hover,
 .menu-base-theme li a:focus,
 .menu-base-theme li a:active,
-.menu-base-theme li a.highlighted {
+.menu-base-theme li a.highlighted{
    border-bottom-color: #337ab7;
 }
 
@@ -92,4 +92,14 @@ h2.page-header {
     border-color: #337ab7!important;
 }
 
-
+@media (max-width: 767px){
+  .menu-base-theme {
+      background: #337ab7;
+  }
+  .menu-base-theme li a:hover,
+  .menu-base-theme li a:focus,
+  .menu-base-theme li a:active,
+  .menu-base-theme li a.highlighted{
+    color: #ffffff;
+  }
+}

@@ -970,9 +970,9 @@ h1.academix-logo {
 
 
    @media (max-width: 767px) {
-     .menu-base-theme {
+    /* .menu-base-theme {
        background: #337ab7;
-     }
+     }*/
      .menu-base-theme li a {
       /* color: #234645; */
      /* color: #ffffff;*/
