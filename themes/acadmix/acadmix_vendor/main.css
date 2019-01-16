@@ -2336,7 +2336,7 @@ ul.page-numbers {
   margin-top: 0; 
 }
 
-@media screen and (min-width: 40em){
+@media screen and (min-width: 767px){
   .section-footer {
       position: fixed;
       bottom: 0;
