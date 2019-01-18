@@ -16,7 +16,7 @@
     z-index: 1;
     background-color: #ffffff;
     position: relative;
-/*    margin-top: 7.2em;*/
+    margin-top: 1.4em;
 }
 
 @media screen and (max-width: 767px){
@@ -27,7 +27,7 @@
 }
 @media screen and (max-width: 600px){
   #main-content{
-    margin-top: 6em;
+    margin-top: 5em;
   }
 }
 
