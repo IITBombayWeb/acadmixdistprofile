@@ -21,19 +21,19 @@
 
 @media screen and (max-width: 767px){
   #main-content{
-    margin-top: 12em;
+    margin-top: 3em;
     margin-bottom: 0px!important;
   }
 }
 @media screen and (max-width: 600px){
   #main-content{
-    margin-top: 13em;
+    margin-top: 6em;
   }
 }
 
 @media screen and (max-width: 450px){
   #main-content{
-    margin-top: 16em;
+    margin-top: 5em;
   }
 }
 
@@ -1017,6 +1017,10 @@ body.toolbar-fixed .top-nav-fixed{
   text-align: left;
 }
 
+
+.footer-bottom .contextual-region .contextual .contextual-links{
+  top: -71px;
+}
 @media screen and (max-width: 600px){
   .navbar-text {
     display: none;
