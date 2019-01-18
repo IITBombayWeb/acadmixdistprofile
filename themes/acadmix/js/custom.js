@@ -48,27 +48,14 @@
   		//there's no secondary nav or secondary nav is below primary nav
   	    if (previousTop - currentTop > scrollDelta) {
   	    	//if scrolling up...
-  	    	topHeader.removeClass('topnav-is-hidden');
-          mainHeader.removeClass('navbar-is-shrink').addClass('navbar-default');
-          $('.navbar #nav-wrap').removeClass('nav-wrap-hidden');
-          $('.navbar-header a.logo2').removeClass('hidden');
-          $('.navbar-header #font-shrink').removeClass('font-shrink');
-          $('.navbar-header #search-shrink').addClass('hidden').removeClass('pull-right');
-          $('.navbar #sec-logo-shrink').removeClass('hidden');
-          $('.navbar-header').removeClass('col-md-12 col-sm-12').addClass('col-md-11 col-sm-11');
-
+  	    	mainHeader.removeClass('is-hidden');
+          $(".top-nav").removeClass('top-nav-fixed').addClass('top-nav-hidden');
 
   	    } 
         else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
   	    	//if scrolling down...
-  	    	topHeader.addClass('topnav-is-hidden');
-          mainHeader.addClass('navbar-is-shrink').removeClass('navbar-default');
-          $('.navbar #nav-wrap').addClass('nav-wrap-hidden');
-          $('.navbar-header a.logo2').addClass('hidden');
-          $('.navbar-header #font-shrink').addClass('font-shrink');
-          $('.navbar-header #search-shrink').removeClass('hidden').addClass('pull-right');
-          $('.navbar #sec-logo-shrink').addClass('hidden');
-          $('.navbar-header').removeClass('col-md-11 col-sm-11').addClass('col-md-12 col-sm-12');
+          mainHeader.addClass('is-hidden');
+          $(".top-nav").removeClass('top-nav-hidden').addClass('top-nav-fixed');
 
 		    }
 		  // }

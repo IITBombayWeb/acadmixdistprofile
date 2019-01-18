@@ -2,11 +2,12 @@ core: 8.x
 type: theme
 base theme: bootstrap
 
-name: 'Acadmix '
+name: 'Acadmix'
 description: 'Custom subtheme using bootstrap as base theme'
 package: 'Bootstrap'
 
 regions:
+  top_head_search: 'Top Head Search'
   header: 'Header'
   header_search: 'Header Search box'
   navigation_collapsible: 'Navigation (Collapsible)'
@@ -27,8 +28,7 @@ regions:
   footer2: 'Footer2'
   footer3: 'Footer3'
   footer4: 'Footer4'
-  footer_bar_left: 'Footer bar left'
-  footer_bar_right: 'Footer bar right'
+  footer_bar: 'Footer bar'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
