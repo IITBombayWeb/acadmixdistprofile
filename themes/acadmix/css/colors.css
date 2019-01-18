@@ -101,10 +101,15 @@ h2.page-header {
     color: #337ab7;
   }
   .menu-base-theme li a:hover,
-  .menu-base-theme li a:focus,
+  .menu-base-theme li a:focus{
+    color: #337ab7;
+  }
+
   .menu-base-theme li a:active,
   .menu-base-theme li a.highlighted{
-    color: #337ab7;
+    background-color: #337ab7;
+    color: #ffffff;
+    border-bottom-color: #ffffff;
   }
 }
 
