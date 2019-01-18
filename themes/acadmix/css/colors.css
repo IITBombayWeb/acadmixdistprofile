@@ -100,13 +100,11 @@ h2.page-header {
   .menu-base-theme li a{
     color: #337ab7;
   }
-  .menu-base-theme li a:hover,
-  .menu-base-theme li a:focus{
-    color: #337ab7;
-  }
 
   .menu-base-theme li a:active,
-  .menu-base-theme li a.highlighted{
+  .menu-base-theme li a.highlighted,
+    .menu-base-theme li a:hover,
+  .menu-base-theme li a:focus{
     background-color: #337ab7;
     color: #ffffff;
     border-bottom-color: #ffffff;
