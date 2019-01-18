@@ -574,12 +574,21 @@ left: 100%;
 /* node */
 
 
+ol.breadcrumb li::before {
+    content: " > ";
+    padding-right: 10px;
+} 
+ol.breadcrumb li:first-child::before {
+    content: "";
+    padding-right: 0px;
+}
 
+/*
 .breadcrumb > li + li:before {
     padding: 0 5px;
     color: #ccc;
     content: "/\00a0";
-}
+}*/
   .sabbi-page-header.page-header-lg {
     min-height: 265px;
     /* width: 100vw;
