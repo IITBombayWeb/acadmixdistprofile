@@ -17,7 +17,7 @@
 #}
 {% block content %}
   <div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12" id="font-shrink">
+    <div class="col-md-8 col-sm-8 col-xs-9">
       {% if site_logo %}
         <a class="logo navbar-btn pull-left" href="http://www.iitb.ac.in/" title="{{ 'IIT Bombay Home'|t }}" rel="home">
           <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-responsive" /> 
@@ -35,10 +35,10 @@
       {% endif %}
     </div>
 
- {#    <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="col-md-4 col-sm-4 col-xs-3">
       <a class="logo2 navbar-btn pull-right" href="http://www.iitb.ac.in/" title="{{ 'IIT Bombay Home'|t }}" rel="home">
         <img class="sec-logo" src= "{{ logo2 }}" alt="{{ 'Home'|t }}" />
       </a>
-    </div> #}
+    </div>
   </div>
 {% endblock %}

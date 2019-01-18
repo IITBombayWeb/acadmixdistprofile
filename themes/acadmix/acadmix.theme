@@ -80,6 +80,7 @@ function acadmix_preprocess_page(&$variables) {
   $current_path = explode("/", $current_url);
   $variables['current_path'] = $current_path[2];
 
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
 
 }
 /**
