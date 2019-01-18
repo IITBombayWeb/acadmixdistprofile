@@ -169,25 +169,22 @@
                       </div>
                     </div>
 
-                    <div id="primary-menu1" class="navbar-collapse collapse ">
-                      {{ page.navigation_collapsible }}
-                    </div>
-                    
               </div>
 
 
- {#              {% if page.navigation_collapsible %}
+              {% if page.navigation_collapsible or page.header_search %}
                   <div class="row" id="nav-wrap">
-                    <div id="primary-menu" class="col-sm-9 col-md-9 navbar-collapse collapse ">
+                    <div id="primary-menu" class="col-md-9 col-sm-8 navbar-collapse collapse ">
                       {{ page.navigation_collapsible }}
                     </div>
-                    <div class="col-sm-3 col-md-3 pull-right">
+                    <div class="col-md-3 col-sm-4 pull-right">
                       {{ page.header_search }}
                     </div>
+
                   </div>
               {% endif %}
 
- #}
+
           {% if not navbar_attributes.hasClass(container) %}
             </div>
           {% endif %}
