@@ -99,27 +99,30 @@
     //   });
     // });
 
-    jQuery(document).ready(function($){
-    	theme_menu();
-    });
-
+  
 
     function theme_menu(){
 
     	//Main menu
-    	jQuery('#main-menu').smartmenus();
+    	$('#main-menu').smartmenus();
 
     	//Mobile menu toggle
-    	jQuery('.navbar-toggle').click(function(){
-    		jQuery('.region-navigation-collapsible').slideToggle();
+    	$('.navbar-toggle').click(function(){
+    		$('.region-navigation-collapsible').slideToggle();
     	});
 
     	//Mobile dropdown menu
     	if ( jQuery(window).width() < 767) {
-    		jQuery(".region-navigation-collapsible li a:not(.has-submenu)").click(function () {
-    			jQuery('.region-navigation-collapsible').hide();
+    		$(".region-navigation-collapsible li a:not(.has-submenu)").click(function () {
+    			$('.region-navigation-collapsible').hide();
     	    });
     	}
     }
+
+      $(document).ready(function($){
+      theme_menu();
+    });
+
+
 
 }(jQuery);
