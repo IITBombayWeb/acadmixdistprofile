@@ -173,13 +173,16 @@
 
 
               {% if page.navigation_collapsible or page.header_search %}
-                  <div class="row" id="nav-wrap">
+                  <div class="row" id="nav-wrap">           
+
+                    <div class="col-md-3 col-sm-4 pull-right">
+                      {{ page.header_search }}
+                    </div>                   
                     <div id="primary-menu" class="col-md-9 col-sm-8 navbar-collapse collapse ">
                       {{ page.navigation_collapsible }}
                     </div>
-                    <div class="col-md-3 col-sm-4 pull-right">
-                      {{ page.header_search }}
-                    </div>
+
+
 
                   </div>
               {% endif %}
@@ -464,28 +467,6 @@
         </div>
       {% endif %}
 
-{#       <div id="site-footer-bar" class="footer-bar">
-              <div class="container">
-                  <div class="row">
-                    {% if page.footer_bar_left %}
-                      {% block footer_bar_left %}
-                        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                            <div class="copyright">
-                              {{ page.footer_bar_left }}
-                            </div>
-                        </div>
-                      {% endblock %}
-                    {% endif %}
-                    {% if page.footer_bar_right %}
-                      {% block footer_bar_right %}
-                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-                            {{ page.footer_bar_right }}
-                        </div>
-                      {% endblock %}
-                    {% endif %}
-                  </div>
-              </div>
-      </div> #}
 
       <div id="site-footer-bar" class="footer-bar">      
         <div class="{{ container }}">

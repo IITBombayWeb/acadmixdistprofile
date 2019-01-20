@@ -1053,5 +1053,29 @@ body.toolbar-fixed .top-nav-fixed{
 
 
 
+/*
+.region-header-search {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#search-block-form {
+    display: table;
+    width: 100%;
+}
+
+#search-block-form .form-item, #search-block-form .form-actions {
+    display: table-cell;
+    vertical-align: top;
+}
+
+@media (min-width: 767px){
+.region-header-search {
+    float: right;
+    width: 260px;
+}
+}
+*/
 
 
