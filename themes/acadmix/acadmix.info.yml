@@ -9,6 +9,7 @@ package: 'Bootstrap'
 regions:
   top_head_search: 'Top Head Search'
   header: 'Header'
+  lang_switcher: 'language Switcher'
   header_search: 'Header Search box'
   navigation_collapsible: 'Navigation (Collapsible)'
   slider: 'slider'
