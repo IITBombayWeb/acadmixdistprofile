@@ -16,24 +16,24 @@
     z-index: 1;
     background-color: #ffffff;
     position: relative;
-    margin-top: 1.4em;
+    margin-top: 3.8em;
 }
 
 @media screen and (max-width: 767px){
   #main-content{
-    margin-top: 3em;
+    margin-top: 6em;
     margin-bottom: 0px!important;
   }
 }
 @media screen and (max-width: 600px){
   #main-content{
-    margin-top: 5em;
+    margin-top: 6em;
   }
 }
 
 @media screen and (max-width: 450px){
   #main-content{
-    margin-top: 5em;
+    margin-top: 5.5em;
   }
 }
 
