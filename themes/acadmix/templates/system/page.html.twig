@@ -125,7 +125,9 @@
             <div class="row">
               {% if show_heading_branding %}              
                 <div class="col-md-9 col-sm-9 col-xs-12">
-                  <div class="top-nav-brand"><a href="{{ heading_branding_url }}" target="_blank" title="{{ 'Home'|t }}">{{ heading_branding_text }}</a></div>
+                  <div class="top-nav-brand">
+                    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" >{{ site_name }}</a>
+                  </div>
                 </div>
               {% endif %}
 
@@ -145,7 +147,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
-                <a class="top-head-def-brand "href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+                <a class="top-head-def-brand "href="{{ heading_branding_url }}" target="_blank" title="{{ heading_branding_title }}" >{{ heading_branding_text }}</a>
               </div>
               <div class="col-sm-6 text-right">
                 {% if page.lang_switcher %}
