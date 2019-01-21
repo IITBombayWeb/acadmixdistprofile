@@ -1098,7 +1098,11 @@ body.toolbar-fixed .top-nav-fixed{
   .navbar-brand {
     font-size: 1rem;
     line-height: 2;
-}
+  }
+  .top-head-def{
+    text-align: center;
+  }
+
 }
 
 
