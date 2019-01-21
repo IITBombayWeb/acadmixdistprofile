@@ -21,22 +21,22 @@
 
 @media screen and (max-width: 767px){
   #main-content{
-    margin-top: 6em;
+    margin-top: 9em;
     margin-bottom: 0px!important;
   }
 }
-@media screen and (max-width: 600px){
+/*@media screen and (max-width: 600px){
   #main-content{
-    margin-top: 6em;
+    margin-top: 9em;
   }
 }
 
 @media screen and (max-width: 450px){
   #main-content{
-    margin-top: 5.5em;
+    margin-top: 9em;
   }
 }
-
+*/
 
 
 
