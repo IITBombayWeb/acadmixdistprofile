@@ -665,7 +665,7 @@ ol.breadcrumb li:first-child::before {
   width: 32px;
 }
 
-.scholar_icon{
+/*.scholar_icon{
    background: url(../img/scholar.png);
 }
 
@@ -676,7 +676,7 @@ ol.breadcrumb li:first-child::before {
 .orcid_icon{
   background: url(../img/orcid.png);
 }
-
+*/
 
 /* single event section */
 .sabbi-events-item .events-item-meta .events-date{
