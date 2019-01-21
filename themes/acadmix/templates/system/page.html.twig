@@ -141,15 +141,17 @@
 
     {% if page.header or page.header_search %}
       <header {{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-        <div class"top-nav-default container">
-          <div class="row">
-            <div class="col-sm-6">
-              {{ site_name }}
-            </div>
-            <div class="col-sm-6">
-              {% if page.lang_switcher %}
-                {{ page.lang_switcher }}
-              {% endif %}
+        <div class="top-head-def">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <a class="top-head-def-brand "href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+              </div>
+              <div class="col-sm-6">
+                {% if page.lang_switcher %}
+                  {{ page.lang_switcher }}
+                {% endif %}
+              </div>
             </div>
           </div>
         </div>
