@@ -60,10 +60,10 @@ a.views-more-link {
   color: #337ab7!important;
 }
 
-.language-switcher-language-url ul.links li.is-active a{
+.language-switcher-language-url ul.lang-links li.is-active a{
   color: #337ab7: 
 }
-.language-switcher-language-url ul.links li.is-active a:hover{
+.language-switcher-language-url ul.lang-links li.is-active a:hover{
   color: #337ab7;
 }
 

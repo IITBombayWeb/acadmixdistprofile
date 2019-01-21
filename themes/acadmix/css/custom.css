@@ -1004,18 +1004,14 @@ body.toolbar-fixed .top-nav-fixed{
   text-decoration: none;
 }
 
-.language-switcher-language-url ul.links{
+.language-switcher-language-url ul.lang-links{
   list-style-type: none;
   display: inline-block;
 }
 
-.language-switcher-language-url ul.links li{
+.language-switcher-language-url ul.lang-links li{
   display: inline;
-  padding: 5px 10px;
-}
-
-.language-switcher-language-url ul.links li a:hover{
-  text-decoration: underline;
+  padding: 5px;
 }
 
 .navbar{
