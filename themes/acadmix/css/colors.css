@@ -1,11 +1,11 @@
 
 
 
-.section-footer, .top-nav{
+.section-footer, .top-nav, .top-head-def{
     background-color: #444444;
 }
 
-.section-footer *, .top-nav *, .section-footer a:hover, .top-nav a:hover{
+.section-footer *, .top-nav *,.top-head-def *, .section-footer a:hover, .top-nav a:hover, .top-head-def a:hover{
 	color: #ffffff!important;
 }
 

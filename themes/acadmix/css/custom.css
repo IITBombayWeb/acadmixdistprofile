@@ -60,7 +60,6 @@
 }
 .top-nav-brand a:hover{
   text-decoration: none;
-  color: #ffffff;
 }
 
 
@@ -936,7 +935,6 @@ ol.breadcrumb li:first-child::before {
 
 
 .top-nav{
-    background-color: #234645;
     padding: 5px;
     font-size: 1.1rem;
     /*position: relative;*/
@@ -970,6 +968,7 @@ ol.breadcrumb li:first-child::before {
    transition: all 0.8s;
 }
 
+
 body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .top-nav-fixed{
   top: 79px;
 }
@@ -988,6 +987,21 @@ body.toolbar-fixed .top-nav-fixed{
   -moz-transition: all 0.8s;
   -o-transition: all 0.8s;
    transition: all 0.8s;
+}
+
+.top-head-def{
+  padding: 5px;
+  font-size: 1.1rem;
+}
+
+.top-head-def-brand{
+  font-size: 1.1rem;
+  font-family: 'Oswald', 'Lucida Sans Unicode','Lucida Grande',sans-serif;
+}
+
+
+.top-head-def a:hover{
+  text-decoration: none;
 }
 
 
