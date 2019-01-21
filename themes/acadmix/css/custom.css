@@ -1014,6 +1014,9 @@ body.toolbar-fixed .top-nav-fixed{
   padding: 5px;
 }
 
+.language-switcher-language-url ul.lang-links li a:hover{
+  text-decoration: underline;
+}
 .navbar{
   margin-bottom: 0px;
 }
