@@ -29,7 +29,8 @@ regions:
   footer2: 'Footer2'
   footer3: 'Footer3'
   footer4: 'Footer4'
-  footer_bar: 'Footer bar'
+  footer_bar_left: 'Footer bar Left'
+  footer_bar_right: 'Footer bar Right'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
