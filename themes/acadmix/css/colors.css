@@ -6,7 +6,7 @@
 }
 
 .section-footer *, .top-nav *,.top-head-def *, .section-footer a:hover, .top-nav a:hover, .top-head-def a:hover{
-	color: #ffffff!important;
+	color: #ffffff;
 }
 
 
@@ -58,6 +58,13 @@ a:hover, .news-card .lst_news_item a:hover{
 
 a.views-more-link {
   color: #337ab7!important;
+}
+
+.language-switcher-language-url ul.links li.is-active a{
+  color: #337ab7: 
+}
+.language-switcher-language-url ul.links li.is-active a:hover{
+  color: #337ab7;
 }
 
 h2.page-header {
