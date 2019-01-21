@@ -1007,6 +1007,8 @@ body.toolbar-fixed .top-nav-fixed{
 .language-switcher-language-url ul.lang-links{
   list-style-type: none;
   display: inline-block;
+  font-family: 'Oswald', 'Lucida Sans Unicode','Lucida Grande',sans-serif;
+  font-size: 0.85rem;
 }
 
 .language-switcher-language-url ul.lang-links li{
