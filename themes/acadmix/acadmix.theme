@@ -82,6 +82,8 @@ function acadmix_preprocess_page(&$variables) {
   $variables['current_path'] = $current_path[2];
 
   $variables['site_name'] = \Drupal::config('system.site')->get('name');
+  $variables['site_slogan'] = \Drupal::config('system.site')->get('slogan');
+
 
 }
 /**
