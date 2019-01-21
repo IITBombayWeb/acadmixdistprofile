@@ -508,30 +508,30 @@
         <div class="{{ container }}">
           {% if page.footer_bar_left  or page.footer_bar_right %}
             <div class="row footer-bottom">
-              
+                
+                {% if page.footer_bar_left %}
                   {% if page.footer_bar_left and page.footer_bar_right %}
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                   {% else %}
                     <div class="col-md-12">
                   {% endif %}
-
                       <div class="copyright">
                         {{ page.footer_bar_left }}    
                       </div>
-
                   </div>
-
+                {% else %}
+                  
+                {% if page.footer_bar_right %}
                   {% if page.footer_bar_left and page.footer_bar_right %}
-                    <div class="col-md-8">
-                   {% else %}
-                    <div class="col-md-12"> 
+                    <div class="col-md-6">
+                  {% else %}
+                    <div class="col-md-12">
                   {% endif %}
-
                       <div class="footer-bootom-nav">
                         {{ page.footer_bar_right }}
                       </div>
-
-                  </div>
+                    </div>
+                {% endif %}
             </div>
           {% endif %}
 
