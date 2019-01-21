@@ -704,9 +704,9 @@ ol.breadcrumb li:first-child::before {
 
 .news-page-header{
   background-color: #b0cad0;
-  background: url(../img/news.jpg);
+/*  background: url(../img/news.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
 }
 
 .news-page-header .page-title{
