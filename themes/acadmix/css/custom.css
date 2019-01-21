@@ -665,7 +665,17 @@ ol.breadcrumb li:first-child::before {
   width: 32px;
 }
 
+.scholar_icon{
+   background: url(../img/scholar.png);
+}
 
+.scopus_icon {
+   background: url(../img/scopus.png);
+}
+
+.orcid_icon{
+  background: url(../img/orcid.png);
+}
 
 
 /* single event section */
