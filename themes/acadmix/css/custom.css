@@ -1011,9 +1011,15 @@ body.toolbar-fixed .top-nav-fixed{
 
 .language-switcher-language-url ul.lang-links li{
   display: inline;
-  padding: 5px;
+  padding: 0px 5px;
+  border-right: 1px dotted;
 }
-
+.language-switcher-language-url ul.lang-links li:last-child{
+   border-right: none;
+}
+.language-switcher-language-url ul.lang-links li a:hover{
+  text-decoration: underline;
+}
 .navbar{
   margin-bottom: 0px;
 }
