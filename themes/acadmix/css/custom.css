@@ -343,7 +343,7 @@ a.logo{
 .card-title {
   margin-top:0px;
   font-weight: 700;
-  font-size: 1.65em;
+  
 }
 .card-title a {
   color: #000;
@@ -363,6 +363,10 @@ a.logo{
 
 .top-wrapper .card{
   background-color: #EDF2F6;
+}
+
+.top-wrapper .card-title{
+  font-size: 1.65em;
 }
 
 /*main navigation dropdown*/
