@@ -323,6 +323,9 @@ body .mb-95 {
 body .mb-100 {
   margin-bottom: 100px; }
 
+.ma{
+  margin: auto;
+}
 
 /* padding box */
 
