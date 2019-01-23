@@ -52,6 +52,10 @@ a {
   color: #337ab7;
 }
 
+a:focus{
+  color: #337ab7;
+}
+
 a:hover, .news-card .lst_news_item a:hover{
    color: #337ab7;
 }
