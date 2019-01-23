@@ -678,6 +678,8 @@ ol.breadcrumb li:first-child::before {
   width: 32px;
 }
 
+
+
 /*.scholar_icon{
    background: url(../img/scholar.png);
 }
@@ -690,6 +692,25 @@ ol.breadcrumb li:first-child::before {
   background: url(../img/orcid.png);
 }
 */
+
+.file {
+  font-size: 100%;
+  }
+
+.file span.file-size{
+  display: none;
+}
+.file>span{
+  color: #234645;
+}
+
+.file-icon .text-primary{
+   color: #234645;
+}
+
+
+
+
 
 /* single event section */
 .sabbi-events-item .events-item-meta .events-date{

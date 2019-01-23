@@ -106,6 +106,16 @@ h2.page-header {
     border-color: #337ab7!important;
 }
 
+.file>span{
+  color: #337ab7;
+}
+
+.file-icon .text-primary{
+   color: #337ab7;
+}
+
+
+
 @media (max-width: 767px){
 
   .menu-base-theme {
