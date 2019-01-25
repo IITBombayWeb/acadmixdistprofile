@@ -35,6 +35,7 @@
 	            	<footer class="contact-info">
 	                	<h4 class="entry-title">Contact Information</h4>
 	                    <p class="__ci_num inline"><span>{{ ds_content.field_phone_no_new }}</span></p>
+	                     <p class="__ci_num inline"><span>{{ ds_content.field_mobile_number_new	}}</span></p>
 	                    <p class="__ci_num inline"> <span>{{ ds_content.field_email_new }}</span></p>
 	              </footer>
 	            {% endif %}
@@ -44,7 +45,9 @@
 					{{ ds_content.field_scopus_id }}
 					{{ ds_content.field_orcid }}
 				</div>
-					
+				<div class="mt-20">
+				{{ ds_content.field_detailed_information_page }}	
+				</div>	
 
 	     	</div>
 
@@ -164,7 +167,7 @@
 						</div>
 	      </div><!-- #main col-sm-8 -->
 
-{{ ds_content|without('field_faculty_photo', 'field_room_no', 'field_building_new', 'field_phone_no_new', 'field_email_new', 'field_google_scholar_id', 'field_scopus_id', 'field_orcid', 'field_full_name', 'field_employment_category', 'field_faculty_designation', 'field_faculty_cv', 'field_background', 'field_affiliations', 'field_awards_and_fellowship', 'field_faculty_rd_proj', 'field_courses_taught', 'field_research_area') }}
+{{ ds_content|without('title', 'field_faculty_photo', 'field_room_no', 'field_building_new', 'field_phone_no_new', 'field_mobile_number_new' 'field_email_new', 'field_google_scholar_id', 'field_scopus_id', 'field_orcid', 'field_full_name', 'field_employment_category', 'field_faculty_designation', 'field_faculty_cv', 'field_background', 'field_affiliations', 'field_awards_and_fellowship', 'field_faculty_rd_proj', 'field_courses_taught', 'field_research_area', 'field_publications_link') }}
 
 
 	   </div> <!-- row -->
