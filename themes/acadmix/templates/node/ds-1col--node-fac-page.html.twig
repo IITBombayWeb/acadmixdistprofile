@@ -52,7 +52,7 @@
 		    	<article class="profile-glimps">
 		            <h2 class="entry-title title-foc-md">{{ ds_content.field_full_name }}</h2>
 		             <p class="text-foc-md"></p>
-		             <p class="text-foc-md">{{ ds_content.field_employment_category}}</p>
+		             <p class="text-foc-md">{{ ds_content.field_employment_category }}</p>
 		             <p class="text-foc-md">{{ ds_content.field_faculty_designation.0 }}</p>
 		      	</article>
 						<ul class="nav nav-pills profile-nav">
@@ -164,7 +164,7 @@
 						</div>
 	      </div><!-- #main col-sm-8 -->
 
-
+{{ ds_content|without('field_faculty_photo', 'field_room_no', 'field_building_new', 'field_phone_no_new', 'field_email_new', 'field_google_scholar_id', 'field_scopus_id', 'field_orcid', 'field_full_name', 'field_employment_category', 'field_faculty_designation', 'field_faculty_cv', 'field_background', 'field_affiliations', 'field_awards_and_fellowship', 'field_faculty_rd_proj', 'field_courses_taught', 'field_research_area') }}
 
 
 	   </div> <!-- row -->
