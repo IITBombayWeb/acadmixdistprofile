@@ -111,6 +111,10 @@ h2.page-header {
     border-color: #337ab7!important;
 }
 
+.btn-primary a, .btn-primary a:hover, .btn-primary a:focus, .btn-primary a:active{
+  color: #ffffff;
+}
+
 .file>span{
   color: #337ab7;
 }
