@@ -40,6 +40,7 @@
 
  .profile-nav > li.active > a, .profile-nav  > li.active > a:hover, .profile-nav  > li.active > a:focus {
 	background-color: #444444;
+  border-color: #444444;
 }
 
 
