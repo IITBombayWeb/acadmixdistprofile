@@ -128,6 +128,10 @@
     -ms-transform: translateY(-30%);
         transform: translateY(-30%);
   }
+
+  .region-navigation-collapsible{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 767px){
@@ -699,13 +703,6 @@ ol.breadcrumb li:first-child::before {
 
 .file span.file-size{
   display: none;
-}
-.file>span{
-  color: #234645;
-}
-
-.file-icon .text-primary{
-   color: #234645;
 }
 
 

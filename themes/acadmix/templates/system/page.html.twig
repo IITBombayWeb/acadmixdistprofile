@@ -183,7 +183,6 @@
             <div class="{{ container }}">
           {% endif %}
 
-              <div class="row clearfix">
                     
                     <div class="row">
                       <div class="col-sm-12">
@@ -205,9 +204,25 @@
                       </div>
                     </div>
 
-              </div>
 
+    <div class="row" id="nav-wrap">
+      <div class="col-md-3 pull-right">
+        {% if page.header_search %}
+          {{ page.header_search }}
+        {% endif %}
+      </div>
+      <div class="navbar-header col-md-9">
+        <nav class="navbar" role="navigation">
+          {% if page.navigation_collapsible %}
+            {{ page.navigation_collapsible }}
+          {% endif %}
+        </nav>
+      </div>
+      
+        
+    </div>
 
+            {# 
               {% if page.navigation_collapsible or page.header_search %}
                   <div class="row" id="nav-wrap">           
 
@@ -218,10 +233,9 @@
                       {{ page.navigation_collapsible }}
                     </div>
 
-
-
                   </div>
               {% endif %}
+            #}
 
 
           {% if not navbar_attributes.hasClass(container) %}
