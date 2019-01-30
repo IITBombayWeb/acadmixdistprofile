@@ -2,21 +2,21 @@ langcode: en
 status: true
 dependencies:
   module:
-    - system
+    - search
   theme:
     - acadmix
   enforced:
     theme:
       - acadmix
-id: acadmix_breadcrumbs
+id: searchform
 theme: acadmix
-region: breadcrumb
-weight: -9
+region: top_head_search
+weight: -13
 provider: null
-plugin: system_breadcrumb_block
+plugin: search_form_block
 settings:
-  id: system_breadcrumb_block
-  label: Breadcrumbs
-  provider: system
+  id: search_form_block
+  label: 'Search form'
+  provider: search
   label_display: '0'
 visibility: {  }

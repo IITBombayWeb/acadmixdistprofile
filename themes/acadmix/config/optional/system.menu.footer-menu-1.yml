@@ -5,6 +5,6 @@ dependencies:
     theme:
       - acadmix
 id: footer-menu-1
-label: 'Footer Menu'
+label: Services
 description: 'Footer column 1 menu'
 locked: false

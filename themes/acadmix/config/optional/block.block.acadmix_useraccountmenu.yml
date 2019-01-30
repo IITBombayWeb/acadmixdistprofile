@@ -12,8 +12,8 @@ dependencies:
       - acadmix
 id: acadmix_useraccountmenu
 theme: acadmix
-region: footer_bar_right
-weight: 0
+region: footer_bar_left
+weight: -12
 provider: null
 plugin: 'system_menu_block:account'
 settings:

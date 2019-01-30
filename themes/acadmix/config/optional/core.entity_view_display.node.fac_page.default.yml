@@ -1,0 +1,237 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fac_page.body
+    - field.field.node.fac_page.field_affiliations
+    - field.field.node.fac_page.field_awards_and_fellowship
+    - field.field.node.fac_page.field_background
+    - field.field.node.fac_page.field_building_new
+    - field.field.node.fac_page.field_courses_taught
+    - field.field.node.fac_page.field_detailed_information_page
+    - field.field.node.fac_page.field_email_new
+    - field.field.node.fac_page.field_employment_category
+    - field.field.node.fac_page.field_faculty_cv
+    - field.field.node.fac_page.field_faculty_designation
+    - field.field.node.fac_page.field_faculty_photo
+    - field.field.node.fac_page.field_faculty_rd_proj
+    - field.field.node.fac_page.field_full_name
+    - field.field.node.fac_page.field_google_scholar_id
+    - field.field.node.fac_page.field_mobile_number_new
+    - field.field.node.fac_page.field_orcid
+    - field.field.node.fac_page.field_phone_no_new
+    - field.field.node.fac_page.field_publications_link
+    - field.field.node.fac_page.field_research_area
+    - field.field.node.fac_page.field_room_no
+    - field.field.node.fac_page.field_scopus_id
+    - node.type.fac_page
+  enforced:
+    module:
+      - iitb_academic_faculty_page
+    theme:
+      - acadmix
+  module:
+    - ds
+    - entity_reference_revisions
+    - file
+    - link
+    - name
+    - options
+    - spamspan
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_affiliations
+        - field_awards_and_fellowship
+        - field_building_new
+        - field_courses_taught
+        - field_detailed_information_page
+        - field_email_new
+        - field_employment_category
+        - field_faculty_designation
+        - field_full_name
+        - field_phone_no_new
+        - field_publications_link
+        - field_room_no
+        - field_faculty_rd_proj
+        - field_background
+        - field_mobile_number_new
+        - field_faculty_cv
+id: node.fac_page.default
+targetEntityType: node
+bundle: fac_page
+mode: default
+content:
+  field_affiliations:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: ds_content
+  field_awards_and_fellowship:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_background:
+    weight: 18
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_building_new:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_courses_taught:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_detailed_information_page:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_email_new:
+    weight: 7
+    label: inline
+    settings:
+      spamspan_at: ' [at] '
+      spamspan_use_graphic: 0
+      spamspan_dot_enable: 0
+      spamspan_dot: ' [dot] '
+      spamspan_use_form: 0
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
+    third_party_settings: {  }
+    type: email_spamspan
+    region: ds_content
+  field_employment_category:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_faculty_cv:
+    weight: 20
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: ds_content
+  field_faculty_designation:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: ds_content
+  field_faculty_rd_proj:
+    type: entity_reference_revisions_entity_view
+    weight: 15
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+  field_full_name:
+    weight: 10
+    label: above
+    settings:
+      format: default
+      markup: false
+      output: default
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+    third_party_settings: {  }
+    type: name_default
+    region: ds_content
+  field_mobile_number_new:
+    weight: 19
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_phone_no_new:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_publications_link:
+    weight: 13
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_room_no:
+    weight: 14
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: ds_content
+hidden:
+  body: true
+  field_faculty_photo: true
+  field_google_scholar_id: true
+  field_orcid: true
+  field_research_area: true
+  field_scopus_id: true
+  langcode: true
+  links: true

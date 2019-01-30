@@ -674,7 +674,7 @@ ol.breadcrumb li:first-child::before {
           transition-property:         transform, opacity;
 }
 
-.main-section.paddind{
+.main-section.padding{
 	padding-bottom:60px;
 }
 
@@ -696,6 +696,10 @@ ol.breadcrumb li:first-child::before {
   background: url(../img/orcid.png);
 }
 */
+
+ul.shs li:last-of-type{
+  list-style-type: none;
+}
 
 .file {
   font-size: 100%;
