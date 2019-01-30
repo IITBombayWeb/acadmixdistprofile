@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    theme:
+      - acadmix
+id: event_type_alias
+label: 'Event type alias'
+type: 'canonical_entities:node'
+pattern: 'event/[node:title]'
+selection_criteria:
+  id: node_type
+  bundles:
+    event: event
+  negate: false
+  context_mapping:
+    node: node
+selection_logic: and
+weight: -5
+relationships: {  }

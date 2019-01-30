@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    theme:
+      - acadmix
+id: faculty
+label: Faculty
+type: 'canonical_entities:node'
+pattern: 'faculty/[node:title]'
+selection_criteria:
+  id: node_type
+  bundles:
+    fac_page: fac_page
+  negate: false
+  context_mapping:
+    node: node
+selection_logic: and
+weight: -5
+relationships: {  }

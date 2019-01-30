@@ -23,6 +23,6 @@ visibility:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/event/*\r\n/news/*\r\n/faculty/*"
     negate: true
     context_mapping: {  }

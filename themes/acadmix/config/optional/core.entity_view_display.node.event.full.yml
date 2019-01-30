@@ -5,21 +5,23 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.event.body
     - field.field.node.event.field_end_date_and_time
+    - field.field.node.event.field_event_name_of_speaker_and_
+    - field.field.node.event.field_event_title_of_seminar_con
     - field.field.node.event.field_event_types
     - field.field.node.event.field_event_venue
-    - field.field.node.event.field_name_of_speak_and_affiliat
     - field.field.node.event.field_start_date_and_time
-    - field.field.node.event.field_title_of_seminar_conferenc
     - node.type.event
+  enforced:
+    module:
+      - iitb_academic_event
+    theme:
+      - acadmix
   module:
     - datetime
     - ds
-    - smart_trim
+    - options
     - text
     - user
-  enforced:
-    theme:
-      - acadmix
 third_party_settings:
   ds:
     layout:
@@ -38,30 +40,31 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - links
-        - field_event_venue
+        - node_title
         - field_start_date_and_time
         - field_end_date_and_time
-        - field_event_types
-        - field_name_of_speak_and_affiliat
+        - field_event_venue
         - field_title_of_seminar_conferenc
         - body
-id: node.event.full
-targetEntityType: node
-bundle: event
-mode: full
-content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 7
-    settings: {  }
-    third_party_settings:
-      ds:
+        - field_event_name_of_speaker_and_
+        - field_event_title_of_seminar_con
+        - field_event_types
+        - field_name_of_speak_and_affiliat
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: ''
+          link: false
         ft:
           id: expert
           settings:
-            lb: 'Event Details '
+            lb: ''
             prefix: ''
             lbw-el: ''
             lbw-cl: ''
@@ -85,9 +88,48 @@ content:
             fis-def-at: false
             fi: false
             fi-def-at: false
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: 'Event Details'
+            prefix: ''
+            lbw: true
+            lbw-el: div
+            lbw-cl: 'col-sm-3 fw-bold'
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: 'row mb-10'
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: col-sm-9
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
     region: ds_content
   field_end_date_and_time:
-    weight: 3
+    weight: 2
     label: above
     settings:
       timezone_override: Asia/Kolkata
@@ -101,18 +143,18 @@ content:
             prefix: ''
             lbw: true
             lbw-el: div
-            lbw-cl: 'field-label pull-left event-date-label'
+            lbw-cl: 'col-sm-3 fw-bold event-date-label'
             lbw-at: ''
             ow: true
             ow-el: div
-            ow-cl: mb-10
+            ow-cl: 'row mb-10'
             ow-at: ''
             fis-el: ''
             fis-cl: ''
             fis-at: ''
             fi: true
             fi-el: div
-            fi-cl: field-value
+            fi-cl: col-sm-9
             fi-at: ''
             suffix: ''
             lb-col: false
@@ -123,11 +165,45 @@ content:
             fi-def-at: false
     type: datetime_custom
     region: ds_content
-  field_event_types:
-    weight: 4
+  field_event_name_of_speaker_and_:
+    weight: 6
     label: above
-    settings:
-      link: true
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: Speaker
+            prefix: ''
+            lbw: true
+            lbw-el: div
+            lbw-cl: 'col-sm-3 fw-bold'
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: 'row mb-10'
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: col-sm-9
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: text_default
+    region: ds_content
+  field_event_title_of_seminar_con:
+    weight: 7
+    label: above
+    settings: {  }
     third_party_settings:
       ds:
         ft:
@@ -137,9 +213,8 @@ content:
             prefix: ''
             lbw: true
             lbw-el: div
-            lbw-cl: 'field-label pull-left'
+            lbw-cl: 'col-sm-3 fw-bold'
             lbw-at: ''
-            ow: true
             ow-el: div
             ow-cl: mb-10
             ow-at: ''
@@ -148,7 +223,44 @@ content:
             fis-at: ''
             fi: true
             fi-el: div
-            fi-cl: field-value
+            fi-cl: col-sm-9
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: list_default
+    region: ds_content
+  field_event_types:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: 'Event Type'
+            prefix: ''
+            lbw: true
+            lbw-el: div
+            lbw-cl: 'col-sm-3 fw-bold'
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: 'row mb-10'
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: col-sm-9
             fi-at: ''
             suffix: ''
             lb-col: false
@@ -160,21 +272,9 @@ content:
     type: entity_reference_label
     region: ds_content
   field_event_venue:
-    weight: 1
+    weight: 3
     label: above
-    settings:
-      trim_length: 600
-      trim_type: chars
-      trim_suffix: ''
-      wrap_class: trimmed
-      more_text: More
-      more_class: more-link
-      wrap_output: false
-      more_link: false
-      trim_options:
-        text: false
-        trim_zero: false
-      summary_handler: full
+    settings: {  }
     third_party_settings:
       ds:
         ft:
@@ -184,18 +284,18 @@ content:
             prefix: ''
             lbw: true
             lbw-el: div
-            lbw-cl: 'field-label pull-left event-venue-label'
+            lbw-cl: 'col-sm-3 fw-bold event-venue-label'
             lbw-at: ''
             ow: true
             ow-el: div
-            ow-cl: mb-10
+            ow-cl: 'row mb-10'
             ow-at: ''
             fis-el: ''
             fis-cl: ''
             fis-at: ''
             fi: true
             fi-el: div
-            fi-cl: field-value
+            fi-cl: col-sm-9
             fi-at: ''
             suffix: ''
             lb-col: false
@@ -204,56 +304,10 @@ content:
             fis: false
             fis-def-at: false
             fi-def-at: false
-    type: smart_trim
-    region: ds_content
-  field_name_of_speak_and_affiliat:
-    weight: 5
-    label: above
-    settings:
-      trim_length: 600
-      trim_type: chars
-      trim_suffix: ''
-      wrap_output: false
-      wrap_class: trimmed
-      more_link: false
-      more_class: more-link
-      more_text: More
-      summary_handler: full
-      trim_options: {  }
-    third_party_settings:
-      ds:
-        ds_limit: ''
-        ft:
-          id: expert
-          settings:
-            lb: Speaker
-            prefix: ''
-            lbw: true
-            lbw-el: div
-            lbw-cl: 'field-label pull-left'
-            lbw-at: ''
-            ow: true
-            ow-el: div
-            ow-cl: mb-10
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: field-value
-            fi-at: ''
-            suffix: ''
-            lb-col: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
-    type: smart_trim
+    type: text_default
     region: ds_content
   field_start_date_and_time:
-    weight: 2
+    weight: 1
     label: above
     settings:
       timezone_override: Asia/Kolkata
@@ -267,18 +321,18 @@ content:
             prefix: ''
             lbw: true
             lbw-el: div
-            lbw-cl: 'field-label pull-left event-date-label'
+            lbw-cl: 'col-sm-3 fw-bold event-date-label'
             lbw-at: ''
             ow: true
             ow-el: div
-            ow-cl: mb-10
+            ow-cl: 'row mb-10'
             ow-at: ''
             fis-el: ''
             fis-cl: ''
             fis-at: ''
             fi: true
             fi-el: div
-            fi-cl: field-value
+            fi-cl: col-sm-9
             fi-at: ''
             suffix: ''
             lb-col: false
@@ -289,45 +343,10 @@ content:
             fi-def-at: false
     type: datetime_custom
     region: ds_content
-  field_title_of_seminar_conferenc:
-    weight: 6
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: 'Title of Conference'
-            prefix: ''
-            lbw: true
-            lbw-el: div
-            lbw-cl: 'field-label pull-left'
-            lbw-at: ''
-            ow: true
-            ow-el: div
-            ow-cl: mb-10
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: field-value
-            fi-at: ''
-            suffix: ''
-            lb-col: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
-    type: string
-    region: ds_content
   links:
-    weight: 0
+    weight: 10
     region: ds_content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
