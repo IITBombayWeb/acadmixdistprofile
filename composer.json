@@ -21,12 +21,27 @@
        "drupal/migrate_source_csv": "~2.2",
        "drupal/slick": "~1.0",
        "drupal/ds": "~3.1",
-       "drupal/csv_serialization": "~1.0"
+       "drupal/csv_serialization": "~1.0",
+       "Ruchikumari94/acadmix_event": "dev-master",
+       "Ruchikumari94/acadmix_news": "dev-master",
+       "Ruchikumari94/acadmix_faculty": "dev-master"
     },
     "repositories": [
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Ruchikumari94/acadmix_event.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Ruchikumari94/acadmix_news.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Ruchikumari94/acadmix_faculty.git"
         }
     ],
     "extra": {
