@@ -23,9 +23,9 @@
         "drupal/slick": "~1.0",
         "drupal/ds": "~3.1",
         "drupal/csv_serialization": "~1.0",
-        "Ruchikumari94/acadmix_event": "dev-master",
-        "Ruchikumari94/acadmix_news": "dev-master",
-        "Ruchikumari94/acadmix_faculty": "dev-master"
+        "tejasvaidya01/acadmix_event": "dev-master",
+        "tejasvaidya01/acadmix_news": "dev-master",
+        "tejasvaidya01/acadmix_faculty": "dev-master"
     },
     "repositories": [
         {
@@ -34,15 +34,15 @@
         },
         {
             "type": "git",
-            "url": "https://github.com/Ruchikumari94/acadmix_event.git"
+            "url": "https://github.com/tejasvaidya01/acadmix_event"
         },
         {
             "type": "git",
-            "url": "https://github.com/Ruchikumari94/acadmix_news.git"
+            "url": "https://github.com/tejasvaidya01/acadmix_news"
         },
         {
             "type": "git",
-            "url": "https://github.com/Ruchikumari94/acadmix_faculty.git"
+            "url": "https://github.com/tejasvaidya01/acadmix_faculty"
         }
     ],
     "extra": {
