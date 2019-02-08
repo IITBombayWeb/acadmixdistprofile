@@ -20,27 +20,12 @@
       "drupal/migrate_source_csv": "~2.2",
       "drupal/slick": "~1.0",
       "drupal/ds": "~3.1",
-      "drupal/csv_serialization": "~1.0",
-      "tejasvaidya01/acadmix_event": "0.1.0-alpha",
-      "tejasvaidya01/acadmix_news": "0.1.0-alpha",
-      "tejasvaidya01/acadmix_faculty": "0.1.0-alpha"
+      "drupal/csv_serialization": "~1.0"
     },
     "repositories": [
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "github",
-            "url": "https://github.com/tejasvaidya01/acadmix_event"
-        },
-        {
-            "type": "github",
-            "url": "https://github.com/tejasvaidya01/acadmix_news"
-        },
-        {
-            "type": "github",
-            "url": "https://github.com/tejasvaidya01/acadmix_faculty"
         }
     ],
     "extra": {
