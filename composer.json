@@ -31,15 +31,15 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "type": "github",
+            "type": "vcs",
             "url": "https://github.com/tejasvaidya01/acadmix_event"
         },
         {
-            "type": "github",
+            "type": "vcs",
             "url": "https://github.com/tejasvaidya01/acadmix_news"
         },
         {
-            "type": "github",
+            "type": "vcs",
             "url": "https://github.com/tejasvaidya01/acadmix_faculty"
         }
     ],
