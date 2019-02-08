@@ -21,9 +21,9 @@
       "drupal/slick": "~1.0",
       "drupal/ds": "~3.1",
       "drupal/csv_serialization": "~1.0",
-      "tejasvaidya01/acadmix_event": "dev-master",
-      "tejasvaidya01/acadmix_news": "dev-master",
-      "tejasvaidya01/acadmix_faculty": "dev-master"
+      "tejasvaidya01/acadmix_event": "0.1.0-alpha",
+      "tejasvaidya01/acadmix_news": "0.1.0-alpha",
+      "tejasvaidya01/acadmix_faculty": "0.1.0-alpha"
     },
     "repositories": [
         {
