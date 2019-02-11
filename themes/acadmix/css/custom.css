@@ -678,24 +678,27 @@ ol.breadcrumb li:first-child::before {
 	padding-bottom:60px;
 }
 
-.scholar_icon img, .scopus_icon img, .orcid_icon img{
+/*.scholar_icon img, .scopus_icon img, .orcid_icon img{
   width: 32px;
 }
-
-
-
-/*.scholar_icon{
-   background: url(../img/scholar.png);
+*/
+.scholar_icon{
+    background-image: url(../img/scholar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.scopus_icon {
-   background: url(../img/scopus.png);
+.scopus_icon{
+  background-image: url(../img/scopus.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .orcid_icon{
-  background: url(../img/orcid.png);
+    background-image: url(../img/orcid.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-*/
 
 ul.shs li:last-of-type{
   list-style-type: none;
