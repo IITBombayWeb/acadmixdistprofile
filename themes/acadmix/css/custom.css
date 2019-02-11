@@ -683,7 +683,7 @@ ol.breadcrumb li:first-child::before {
 }
 */
 .scholar_icon{
-    background-image: url(../img/scholar.png);
+    background-image: url(../img/scholar.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 32px;
