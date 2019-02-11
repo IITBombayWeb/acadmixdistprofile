@@ -709,6 +709,10 @@ ol.breadcrumb li:first-child::before {
     color: transparent;
 }
 
+.scholar_icon:hover, .scopus_icon:hover, .orcid_icon:hover{
+    color: transparent;
+}
+
 ul.shs li:last-of-type{
   list-style-type: none;
 }
