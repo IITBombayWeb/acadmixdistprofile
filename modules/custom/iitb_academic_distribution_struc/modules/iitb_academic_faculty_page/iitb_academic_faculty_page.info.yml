@@ -1,5 +1,0 @@
-name: 'IITB Academic Faculty Page'
-type: module
-description: 'IITB Sub Modules'
-core: 8.x
-package: 'Custom'

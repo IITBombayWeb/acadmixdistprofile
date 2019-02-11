@@ -22,7 +22,11 @@
       "drupal/slick": "~1.0",
       "drupal/ds": "~3.1",
       "drupal/csv_serialization": "~1.0",
-      "drupal/paragraphs": "~1.5"
+      "drupal/paragraphs": "~1.5",
+      "drupal/config_sync": "~2.0",
+      "drupal/config_merge_filter": "~1.0",
+      "drupal/config_distro_ignore": "~1.0",
+      "drupal/config_update_ui": "~1.6"
     },
     "repositories": [
         {

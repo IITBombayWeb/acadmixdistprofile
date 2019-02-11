@@ -44,6 +44,10 @@ dependencies:
   - tour
   - automated_cron
  #contrib
+  - config_sync
+  - config_merge_filter
+  - config_distro_ignore
+  - config_update_ui
   - admin_toolbar_tools
   - admin_toolbar_links_access_filter
   - name
