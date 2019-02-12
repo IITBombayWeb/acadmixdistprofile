@@ -64,6 +64,7 @@ dependencies:
   - migrate_source_csv
   - slick
   - ds
+  - libraries
 themes:
   - bartik
   - seven
