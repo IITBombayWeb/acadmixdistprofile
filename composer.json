@@ -20,6 +20,8 @@
       "drupal/migrate_plus": "~4.0",
       "drupal/migrate_source_csv": "~2.2",
       "drupal/slick": "~1.0",
+      "slick": "1.9.0",
+      "drupal/libraries": "~3.0",
       "drupal/ds": "~3.1",
       "drupal/csv_serialization": "~1.0",
       "drupal/paragraphs": "~1.5",
@@ -29,10 +31,22 @@
       "drupal/config_update_ui": "~1.6"
     },
     "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
+      {
+        "type": "composer",
+        "url": "https://packages.drupal.org/8"
+      },
+      {
+        "type": "package",
+        "package": {
+          "name": "slick",
+          "version": "v1.9.0",
+          "type": "drupal-library",
+          "dist": {
+            "url": "https://github.com/kenwheeler/slick/archive/master.zip",
+            "type": "zip"
+          }
         }
+      }
     ],
     "extra": {
     	"installer-paths": {
