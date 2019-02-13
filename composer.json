@@ -28,14 +28,33 @@
       "drupal/config_merge_filter": "~1.0",
       "drupal/config_distro_ignore": "~1.0",
       "drupal/config_update_ui": "~1.6",
-      "drupal/astrology": "~1.3"
+      "drupal/astrology": "~1.3",
+      "IITBombayWeb/acadmixdistprofile": "~0.1.0",
+      "tejasvaidya01/acadmix_event": "~0.1.0",
+      "tejasvaidya01/acadmix_news": "~0.1.0",
+      "tejasvaidya01/acadmix_faculty": "~0.1.0"
     },
-    "repositories": [
-      {
+    "repositories": {
+      "drupal": {
         "type": "composer",
         "url": "https://packages.drupal.org/8"
+      },
+      "event": {
+        "type": "github",
+        "url": "https://github.com/tejasvaidya01/acadmix_event",
+        "no-api": true
+      },
+      "news": {
+        "type": "github",
+        "url": "https://github.com/tejasvaidya01/acadmix_news",
+        "no-api": true
+      },
+      "faculty": {
+        "type": "github",
+        "url": "https://github.com/tejasvaidya01/acadmix_faculty",
+        "no-api": true
       }
-    ],
+    },
     "extra": {
     	"installer-paths": {
     	}

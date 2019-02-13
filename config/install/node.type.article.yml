@@ -1,9 +1,9 @@
 langcode: en
 status: true
 dependencies: {  }
-name: Article Test
+name: Article
 type: article
-description: 'Test Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
+description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
 help: ''
 new_revision: true
 preview_mode: 1
