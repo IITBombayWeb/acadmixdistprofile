@@ -36,10 +36,7 @@
                             </figure>
                         </a> -->
                             <div class="events-item-meta">
-                                {{ ds_content.field_event_venue }}
-                                {{ ds_content.field_news_date }}
-                                {{ ds_content.field_news_type }}
-                                {{ ds_content.body }}
+                                {{ ds_content|without('title') }}
                             </div>
                       </article><!-- /.sabbi-events-item -->
                 </div>

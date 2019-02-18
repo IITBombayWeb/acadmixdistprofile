@@ -61,7 +61,10 @@
 						<ul class="nav nav-pills profile-nav">
 							<li class="active"><a data-toggle="pill" href="#personal"><i class="fa fa-user" aria-hidden="true"></i> Personal Information</a></li>
 							<li><a data-toggle="pill" href="#rnd"><i class="fa fa-tasks" aria-hidden="true"></i> R&D</a></li>
+						{% if ds_content.field_courses_taught %}
 							<li><a data-toggle="pill" href="#teaching"> <i class="fa fa-book" aria-hidden="true"></i> Teaching</a></li>
+						{% endif %}
+
 							<li><a data-toggle="pill" href="#research-area"><i class="fa fa-check-square-o" aria-hidden="true"></i> Research Areas</a></li>
 						</ul>
 						<div class="tab-content">
@@ -156,11 +159,11 @@
 									{{ ds_content.field_publications_link }}
 								</div>
 							</div>
-
-							<div class="teaching tab-pane fade stage-content-biog" id="teaching" >
-								{{ ds_content.field_courses_taught }}
-							</div>
-
+							{% if ds_content.field_courses_taught %}
+								<div class="teaching tab-pane fade stage-content-biog" id="teaching" >
+									{{ ds_content.field_courses_taught }}
+								</div>
+							{% endif %}
 							<div class="research-area tab-pane fade stage-content-biog" id="research-area">
 								{{ ds_content.field_research_area }}
 							{{ ds_content|without('title', 'field_full_name', 'field_faculty_photo', 'field_room_no', 'field_building_new', 'field_phone_no_new', 'field_mobile_number_new', 'field_email_new', 'field_google_scholar_id', 'field_scopus_id', 'field_orcid', 'field_full_name', 'field_employment_category', 'field_faculty_designation', 'field_faculty_cv', 'field_background', 'field_affiliations', 'field_awards_and_fellowship', 'field_faculty_rd_proj', 'field_courses_taught', 'field_research_area','field_publications_link', 'field_detailed_information_page') }}
