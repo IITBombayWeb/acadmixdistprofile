@@ -130,8 +130,8 @@ h6.description{
 
 
 .form-item-field_chem_staff_category-target-id label.control-label{
-/*  background-color: #f9f9f9;
-  color: #234645!important;*/
+  background-color: #f9f9f9;
+  /*color: #234645!important;*/
   border: 1px solid #ddd;
   padding: 0.5em;
   border-radius: 4px;
@@ -147,8 +147,8 @@ h6.description{
 }
 
 .form-item-dept-staff label.control-label{
- /* background-color: #f9f9f9;
-  color: #234645!important;*/
+  background-color: #f9f9f9;
+/*  color: #234645!important;*/
   border: 1px solid #ddd;
   padding: 0.5em;
   border-radius: 4px;
@@ -159,7 +159,7 @@ h6.description{
 }
 
 .form-item-dept-staff label.control-label input[checked="checked"]+label.control-label {
-	background-color: #234645!important;
+/*background-color: #234645!important;*/
 	color: #ffffff!important;
 }
 
@@ -170,10 +170,10 @@ h6.description{
 }
 
 #edit-staff-category .form-group {
-/*  background-color: #f9f9f9;
-  color: #234645!important;
+  background-color: #f9f9f9;
+  /*color: #234645!important;*/
   border: 1px solid #ddd;
-  padding: 0.1em 1em;*/
+  padding: 0.1em 1em;
   margin-bottom: 0.2em;
   border-radius: 4px;
   -webkit-transition: all 0.5s;
@@ -184,23 +184,23 @@ h6.description{
 #edit-staff-category .form-group a{
   padding: 0.1em 1em;
 }
-/*#edit-staff-category .form-group a:hover{
-color: #234645!important;
-}*/
+#edit-staff-category .form-group a:hover{
+/*color: #234645!important;*/
+}
 
-/*#edit-staff-category .form-group:hover{
+#edit-staff-category .form-group:hover{
   background-color: #f0f8ff;
 
-}*/
+}
 
-/*#edit-staff-category div.bef-link-active, #edit-staff-category div.bef-link-active:hover, #edit-staff-category div.bef-link-active:focus {
-  background-color: #234645!important;
+#edit-staff-category div.bef-link-active, #edit-staff-category div.bef-link-active:hover, #edit-staff-category div.bef-link-active:focus {
+  /*background-color: #234645!important;*/
   color: #ffffff!important;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-}*/
+}
 #edit-staff-category a.bef-link-active, #edit-staff-category a.bef-link-active:hover{
   color: #ffffff!important;
 }
