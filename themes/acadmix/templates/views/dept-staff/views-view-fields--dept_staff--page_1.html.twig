@@ -55,6 +55,8 @@
   {%- endif %}
 {%- endfor %}
  #}
+
+ {{ attach_library('acadmix/dept-staff') }}
  {% set id = fields.nid.content|render|striptags|trim %}
  {% set head_flag = fields.field_chem_staff_head.content|render|striptags|trim %}
  
