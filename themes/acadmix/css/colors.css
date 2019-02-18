@@ -166,16 +166,16 @@ h2.page-header {
 }
 
 .form-item-field_chem_staff_category-target-id label.control-label input[checked="checked"]+label.control-label {
-  /*background-color: #234645!important;*/
+  background-color: #337ab7!important;
 }
 
 .form-item-dept-staff label.control-label{
- /*color: #234645!important;*/
+ color: #337ab7!important;
 }
 
 
 .form-item-dept-staff label.control-label input[checked="checked"]+label.control-label {
-  background-color: #234645!important;
+  background-color: #337ab7!important;
 }
 
 
@@ -185,24 +185,19 @@ h2.page-header {
 }
 
 #edit-staff-category .form-group {
-   color: #234645!important;
+   color: #337ab7!important;
   
 }
 
-/*#edit-staff-category .form-group a:hover{
-color: #234645!important;
-}*/
+#edit-staff-category .form-group a:hover{
+color: #337ab7!important;
+}
 
-/*#edit-staff-category .form-group:hover{
+#edit-staff-category .form-group:hover{
   background-color: #f0f8ff;
 
-}*/
+}
 
 #edit-staff-category div.bef-link-active, #edit-staff-category div.bef-link-active:hover, #edit-staff-category div.bef-link-active:focus {
-  background-color: #234645!important;
-  color: #ffffff!important;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  background-color: #337ab7!important;
 }
