@@ -50,3 +50,8 @@ smartmenus:
     includes/smartmenus/jquery.smartmenus.min.js: {}
   dependencies:
     - core/jquery
+
+dept-staff:
+  css:
+    theme:
+      css/dept_staff.css: {}
