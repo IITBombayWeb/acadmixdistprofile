@@ -228,7 +228,13 @@ body.toolbar-fixed .top-nav-fixed{
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
     }
- 
+ .navbar-brand {
+  height: auto;
+  padding-top: 0.9em ;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Oswald', 'Lucida Sans Unicode','Lucida Grande',sans-serif;
+}
   .navbar-text {
     width: 10em;
     text-align: initial;
@@ -365,13 +371,7 @@ a.logo{
     transition: 0.5s;
 }
 
-.navbar-brand {
-  height: auto;
-  padding-top: 0.9em ;
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: 'Oswald', 'Lucida Sans Unicode','Lucida Grande',sans-serif;
-}
+
 
 @media screen and (max-width: 767px){
   #search-shrink{
