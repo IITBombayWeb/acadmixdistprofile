@@ -179,8 +179,6 @@ body.toolbar-fixed .top-nav-fixed{
 }
 
 
-
-
 /* header */
 .navbar {
   -webkit-transition: 0.5s;
@@ -206,10 +204,8 @@ body.toolbar-fixed .top-nav-fixed{
 }
 
 
-
-
 .navbar{
-  margin-bottom: 0px;
+  margin-bottom: 0px!important;
 }
 
 #navbar {
