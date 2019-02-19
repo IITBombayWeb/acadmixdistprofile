@@ -70,4 +70,4 @@ dept-staff:
 about-us:
   css:
     theme:
-      css/about-us.css: {}
+      css/about_us.css: {}
