@@ -191,9 +191,14 @@ body.toolbar-fixed .top-nav-fixed{
     transition: 0.5s;
   }
 
+ 
+@media screen and (max-width: 767px){
+
   .region-navigation-collapsible{
     display: none;
   }
+}
+
 
 #navbar {
   -webkit-transition: all 0.8s;
@@ -221,6 +226,10 @@ body.toolbar-fixed .top-nav-fixed{
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Oswald', 'Lucida Sans Unicode','Lucida Grande',sans-serif;
+  -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
   .navbar-text {
     width: 10em;
