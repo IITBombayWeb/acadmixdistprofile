@@ -181,6 +181,7 @@ body.toolbar-fixed .top-nav-fixed{
 
 /* header */
 .navbar {
+  margin-bottom: 0px;
   -webkit-transition: 0.5s;
      -moz-transition: 0.5s;
      -o-transition: 0.5s;
@@ -201,11 +202,6 @@ body.toolbar-fixed .top-nav-fixed{
   .region-navigation-collapsible{
     display: none;
   }
-}
-
-
-.navbar{
-  margin-bottom: 0px!important;
 }
 
 #navbar {
