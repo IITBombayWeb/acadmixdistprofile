@@ -45,9 +45,12 @@ global-styling:
     js/scroll.js: {}
     js/wow.min.js: {}
     js/custom.js: {}
-    js/script.js: {}
   dependencies:
     - core/jquery
+    - core/jquery.once 
+    - core/drupalSettings
+    - core/modernizr
+    - core/drupal
 
 color.preview:
   version: VERSION
@@ -63,3 +66,8 @@ dept-staff:
   css:
     theme:
       css/dept_staff.css: {}
+
+about-us:
+  css:
+    theme:
+      css/about-us.css: {}
