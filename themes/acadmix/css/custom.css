@@ -182,12 +182,8 @@ body.toolbar-fixed .top-nav-fixed{
 /* header */
 .navbar {
   margin-bottom: 0px;
-  -webkit-transition: 0.5s;
-     -moz-transition: 0.5s;
-     -o-transition: 0.5s;
-    transition: 0.5s;
+ 
   }
-
   .navbar-default{
     -webkit-transition: 0.5s;
      -moz-transition: 0.5s;
@@ -195,14 +191,9 @@ body.toolbar-fixed .top-nav-fixed{
     transition: 0.5s;
   }
 
-  .navbar-fixed-top{
-    z-index: 10;
-  }
-
   .region-navigation-collapsible{
     display: none;
   }
-}
 
 #navbar {
   -webkit-transition: all 0.8s;
@@ -212,10 +203,6 @@ body.toolbar-fixed .top-nav-fixed{
   }
   .navbar-fixed-top{
     z-index: 10;
-     -webkit-transition: all 0.8s;
-     -moz-transition: all 0.8s;
-     -o-transition: all 0.8s;
-    transition: all 0.8s;
   }
 
 
