@@ -35,6 +35,16 @@ section#about{
     transform:scale(1.2);
 }
 
+#blog .blog-details .blog-box .blog-caption ul:not(.grid) li:before, #about ul li:before, .service-desc ul li:before, #blog ul:not(.grid):not(.links) li:before{
+    content: "\f0a4";
+    font-family: FontAwesome;
+    font-size: 15px;
+    display: block;
+    color: #a14500;
+    margin-right: 10px;
+    float: left;
+}
+
 @media (max-width: 575px) and (min-width: 320px){
      .title-section p {
         padding: 10px 10px;
@@ -65,6 +75,11 @@ section#about{
     padding-bottom: 10px;
     font-size: 14px;
     line-height: 23px;
+    color: #777;
+    /*font-family: 'Open Sans', sans-serif;*/
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: 400
 }
 #about ul {
  padding: 20px 30px;
