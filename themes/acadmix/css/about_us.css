@@ -83,19 +83,19 @@ section#about{
 #about ul li .fa {
     font-size: 15px;
     padding-right: 12px;
-    color: var(--main-theme-color);
+    color: ;
     float: left;
 }
 #about.our-mission-and-vision .fa {
     float: left;
     font-size: 30px;
-    color: var(--main-theme-color);
+    color: #a14500;
     padding-right: 15px;
 }
 #about.our-mission-and-vision .fa {
     float: left;
     font-size: 30px;
-    color: var(--main-theme-color);
+    color: #a14500;
     padding-right: 15px;
 }
 #about.our-mission-and-vision .mission-vision-caption {
@@ -134,7 +134,7 @@ section#about{
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 20px;
-    background: var(--main-theme-color);
+    background: #a14500;
     border-radius: 50%;
     padding: 13px 17px;
 }
