@@ -42,8 +42,10 @@ global-styling:
       css/custom.css: {}
       css/colors.css: {}
   js:
-    js/custom.js: {}
     js/scroll.js: {}
+    js/wow.min.js: {}
+    js/custom.js: {}
+    js/script.js: {}
   dependencies:
     - core/jquery
 
