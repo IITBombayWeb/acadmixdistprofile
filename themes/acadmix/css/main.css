@@ -192,6 +192,10 @@ img.grayscale:hover {
     margin-right: auto!important;
 }
 
+.float-none{
+  float: none;
+}
+
 /* text */
 .text-right {
   text-align: right; 

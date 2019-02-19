@@ -37,7 +37,7 @@ section#about{
 
 #blog .blog-details .blog-box .blog-caption ul:not(.grid) li:before, #about ul li:before, .service-desc ul li:before, #blog ul:not(.grid):not(.links) li:before{
     content: "\f0a4";
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     font-size: 15px;
     display: block;
     color: #a14500;
@@ -58,6 +58,7 @@ section#about{
 #about img {
     width: 100%;
     height: 400px;
+    object-fit: cover;
 }
 #about .hovereffect {
     height: auto;
