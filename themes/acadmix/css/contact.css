@@ -1,0 +1,186 @@
+/*contact-page*/
+#contact {
+    background: #f4f6f8;
+    padding: 100px 0px;
+}
+.get-in-touch, .contact-info {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    padding: 50px 30px 30px;
+    background: #fff;
+}
+.follow-us {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    padding: 38px 30px 20px;
+    background: #fff;
+    margin-top: 10px;
+}
+.follow-us ul {
+    padding: 0px 10px;
+}
+.follow-us ul li {
+    display: inline-block;
+    margin-right: 5px;
+    background: #6fb4c1;
+    /* background: rgba(111, 180, 193, 0.6); */
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 50%;
+}
+.follow-us ul li .fa-facebook {
+    padding: 12px 16px !important;
+}
+.follow-us ul li .fa {
+    padding: 12px 13px;
+}
+.follow-us li a {
+    z-index: -10;
+    color: #fff;
+    font-weight: 900;
+}
+#contact form {
+    padding: 20px 0px;
+}
+#contact form input, #contact form textarea {
+    width: 100%;
+    border: none;
+    border: 1px solid #dfdfdf;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    font-size: 13.5px;
+    margin-bottom: 5px;
+    color: #000;
+}
+#contact h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#contact button.custom-btn, .contact-form button.custom-btn {
+    border: none;
+    cursor: pointer;
+}
+#contact p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.contact-info .address i{
+    float: left;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: 6px;
+}
+.contact-info .address span{
+    overflow: hidden;
+    display: block;
+    width: 250px;
+}
+.contact-info p a {
+    overflow: hidden;
+    display: block;
+}
+.contact-info .address .fa-map-marker {
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 4px;
+}
+.contact-info p.address {
+    padding: 7px 0px;
+}
+.contact-info p.address a {
+    line-height: 25px;
+}
+#map iframe {
+    position: relative;
+    top: 5px;
+    bottom: 0px;
+}
+
+#call-to-action {
+    padding: 50px 0px 50px;
+    color: #fff !important;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% -26px;
+    z-index: 0;
+}
+#call-to-action:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(9, 23, 37, 0.8);
+    z-index: -1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#call-to-action h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fdfdfd;
+}
+#call-to-action p {
+    font-size: 13px;
+    font-style: italic;
+    padding-top: 10px;
+    color: #fdfdfd;
+}
+.call-to-action-btn .custom-btn{
+    padding: 12px 40px;
+}
+#call-to-action.front-cta{
+    padding: 200px 0px !important;
+    text-align: center;
+}
+#call-to-action.front-cta h3 {
+    font-size: 35px !important;
+    padding-bottom: 10px;
+}
+#call-to-action.front-cta p {
+    font-size: 16px !important;
+}
+#call-to-action.front-cta .call-to-action-btn {
+    padding: 50px 0px;
+}
+
+#call-to-action .call-to-action-btn a.custom-btn{
+     margin: 0px;
+}
+
+.custom-btn{
+    background: #0dc0c0;
+    color: #ffffff;
+    padding: 10px 35px;
+    margin: 0 10px;
+    font-weight: 700;
+    margin: 30px 15px;
+    font-size: 14px;
+    transition: 0.6s ease-in-out;
+}
+.custom-btn:hover {
+    background: #059999bf;
+    transition: 0.6s ease-in-out;
+    color: #fff;
+}
+
+/*Media Style*/
+@media (max-width: 992px) and (min-width: 320px){
+    #contact .contact-info {
+        margin-top: 30px;
+    }
+
+}

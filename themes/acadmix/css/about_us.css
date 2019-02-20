@@ -35,7 +35,7 @@ section#about{
     transform:scale(1.2);
 }
 
-#blog .blog-details .blog-box .blog-caption ul:not(.grid) li:before, #about ul li:before, .service-desc ul li:before, #blog ul:not(.grid):not(.links) li:before{
+#about ul li:before{
     content: "\f0a4";
     font-family: "Font Awesome 5 Free";
     font-size: 15px;
@@ -45,11 +45,6 @@ section#about{
     float: left;
 }
 
-@media (max-width: 575px) and (min-width: 320px){
-     .title-section p {
-        padding: 10px 10px;
-    }
-}
 
 /*About-us*/
 #about {
@@ -166,4 +161,28 @@ section#about{
 }
 .about-btn a {
     margin: 0px;
+}
+
+
+
+
+/*Media Style*/
+@media (max-width: 992px) and (min-width: 320px){
+    #about h3 {
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 770px) and (min-width: 320px){
+    .banner {
+        background-position: 50% 0px;
+    }
+}
+
+
+@media (max-width: 575px) and (min-width: 320px){
+    .title-section p {
+        padding: 10px 10px;
+    }
 }
