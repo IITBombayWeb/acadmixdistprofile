@@ -72,12 +72,7 @@ about-us:
   css:
     theme:
       css/about_us.css: {}
-
-banner:
-  css:
-    theme:
-      css/banner.css: {}
-
+      
 contact:
   css:
     theme:
