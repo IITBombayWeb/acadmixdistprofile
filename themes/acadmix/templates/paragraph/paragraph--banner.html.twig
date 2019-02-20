@@ -1,6 +1,6 @@
 {{ attach_library('acadmix/banner') }}
     <!-- Banner -->
-    <section class="banner" style="background-image:url({{content.field_background_image.0}})">
+    <section class="banner" style="background-image:url({{ file_url(content.field_background_image['#items'].entity.uri.value)}})">
         <div class="container">
           <div class="row">
             <div class="col-md-8 banner-content">
