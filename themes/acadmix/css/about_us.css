@@ -163,6 +163,9 @@ section#about{
     margin: 0px;
 }
 
+.about-btn a:hover{
+    text-decoration: none;
+}
 .custom-btn{
     background: #a14500;
     color: #ffffff;
